@@ -16,10 +16,34 @@
 
         <ul>
             <li><a href="#">Floor Plans</a></li>
-            <li><a href="#">Guides<i class="nav-icon mdi mdi-chevron-down"></i></a></li>
-            <li><a href="#">Market Intelligence<i class="nav-icon mdi mdi-chevron-down"></i></a></li>
-            <li><a href="#">Events<i class="nav-icon mdi mdi-chevron-down"></i></a></li>
-        </ul>
+
+            <li>
+                <a href="#">Guides <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                <div class="dropdown">
+                <a href="#">Buying Guide</a>
+                <a href="#">Renting Guide</a>
+                <a href="#">Selling Guide</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">Market Intelligence <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                <div class="dropdown">
+                    <a href="#">Reports</a>
+                    <a href="#">Data Insights</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">Events <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                <div class="dropdown">
+                <a href="#">Upcoming Events</a>
+                <a href="#">Past Events</a>
+                </div>
+            </li>
+            </ul>
+
+
 
         <div class="nav-right">
             <div class="nav-right-icon">
@@ -156,12 +180,12 @@
 
 
     <div style="margin: 0px 100px;">
-        <div style="width: 100%; height: 300px; background-image: url('images/appoinment.png'); background-size: cover; background-position: center; margin-top: 50px; padding: 30px; border-radius: 12px;">
+        <div style="width: 100%; height: 300px; background-image: url('images/appoinment6.png'); background-size: cover; background-position: center; margin-top: 50px; padding: 30px; border-radius: 12px;">
             <div style="margin-left: 600px; padding: 10px 0px;">
-                <h2 style="font-size: 30px; font-weight: 600; line-height: 30px; color: #fff;">Find Your Dream Home</h2>
-                <h2 style="font-size: 30px; font-weight: 600; line-height: 38px; color: #fff; margin-top: 20px;">Make A Free Schedule To Appointment</h2>
+                <h2 style="font-size: 32px; font-weight: 600; line-height: 30px; color: #fff;">Find Your Dream Home</h2>
+                <h2 style="font-size: 32px; font-weight: 600; line-height: 38px; color: #fff; margin-top: 20px;">Make A Free Schedule To Appointment</h2>
                 <p style="font-size: 18px; letter-spacing: 1px; color: #fff; margin-top: 20px;">Click below for appointment.</p>
-                <button style="height: 50px; width: 250px; background: #00749D; border-radius: 30px; border: none; color: #fff; font-size: 18px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 40px; ">Make an Appoinment</button>
+                <button class="btn-hover" style="height: 50px; width: 250px; background: #1F9086; border-radius: 30px; border: none; color: #fff; font-size: 18px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 40px; ">Make an Appoinment</button>
             </div>
         </div>
     </div>
@@ -170,7 +194,11 @@
 
 
 
-    <div style="margin: 0px 100px; margin-top: 50px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 1px solid #B3B3B3; padding-bottom: 40px;">
+
+
+
+
+    <div class="city-main" style="margin: 0px 100px; margin-top: 50px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 1px solid #B3B3B3; padding-bottom: 40px;">
         <h2 style="font-size: 30px;">Browse New Projects in Lucknow</h2>
 
         <div style="width:535px; height: 50px; background: #fff; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-top: 30px; border: 1px solid #D3D3D3; border-radius: 8px;">
@@ -195,8 +223,9 @@
             </div>
         </div>
         
-        <div style="margin-top: 30px; display: flex; justify-content: space-between;">
-            <div style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+        
+        <div class="city-content" data-city="Lucknow" style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
                 <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -212,12 +241,12 @@
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
             </div>
-            <div style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
                 <img src="images/city2.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -233,12 +262,12 @@
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
             </div>
-            <div style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
                 <img src="images/city3.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -254,12 +283,12 @@
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
             </div>
-            <div style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
                 <img src="images/city4.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -275,16 +304,115 @@
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
             </div>
         </div>
 
-        <button style="height: 50px; width: 320px; background: #DCEBE6; border-radius: 8px; border: none; color: #575757; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 30px;">View all new projects in Lucknow</button>
+
+        <div class="city-content" data-city="Delhi" style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+                <img src="images/city4.jpg" alt="" style="width: 100%; border-radius: 4px;">
+                <h3 style="font-size: 20px; margin-top: 5px;">Capital Homes</h3>
+                <p style="font-size: 16px; margin-top: 2px;">Delhi</p>
+                <div style="display: flex; align-items: center; margin-top: 5px;">
+                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+                    <p style="font-size: 14px; color: #8D8D8D;">Behinde BSNL Office, Delhi</p>
+                </div>
+                <div style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Price</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 60 Lakhs</div>
+                    </div>
+                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Beds & Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                    </div>
+                </div>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+            </div>
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+                <img src="images/city3.jpg" alt="" style="width: 100%; border-radius: 4px;">
+                <h3 style="font-size: 20px; margin-top: 5px;">Capital Homes</h3>
+                <p style="font-size: 16px; margin-top: 2px;">Delhi</p>
+                <div style="display: flex; align-items: center; margin-top: 5px;">
+                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+                    <p style="font-size: 14px; color: #8D8D8D;">Behinde BSNL Office, Delhi</p>
+                </div>
+                <div style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Price</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 60 Lakhs</div>
+                    </div>
+                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Beds & Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                    </div>
+                </div>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+            </div>
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+                <img src="images/city2.jpg" alt="" style="width: 100%; border-radius: 4px;">
+                <h3 style="font-size: 20px; margin-top: 5px;">Capital Homes</h3>
+                <p style="font-size: 16px; margin-top: 2px;">Delhi</p>
+                <div style="display: flex; align-items: center; margin-top: 5px;">
+                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+                    <p style="font-size: 14px; color: #8D8D8D;">Behinde BSNL Office, Delhi</p>
+                </div>
+                <div style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Price</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 60 Lakhs</div>
+                    </div>
+                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Beds & Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                    </div>
+                </div>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+            </div>
+            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px;">
+                <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
+                <h3 style="font-size: 20px; margin-top: 5px;">Capital Homes</h3>
+                <p style="font-size: 16px; margin-top: 2px;">Delhi</p>
+                <div style="display: flex; align-items: center; margin-top: 5px;">
+                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+                    <p style="font-size: 14px; color: #8D8D8D;">Behinde BSNL Office, Delhi</p>
+                </div>
+                <div style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Price</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 60 Lakhs</div>
+                    </div>
+                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                        <div style="font-weight: 500;">Beds & Baths</div>
+                        <div style="margin-top: 4px; color: #808080;">4 Beds & 2 Baths</div>
+                    </div>
+                </div>
+                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <button class="city-btn" style="height: 50px; width: 320px; background: #DCEBE6; border-radius: 8px; border: none; color: #575757; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 30px;">View all new projects in Lucknow</button>
 
     </div>
+
+
+
+
 
 
 
@@ -294,8 +422,8 @@
         <p style="font-size: 16px; color: #606060; width: 70%; text-align: center; margin-top: 10px; line-height: 22px;">Annually, thousands of clients choose FabState as their real estate agency. Beside having years of experience in real esate industry, there is a variety of reasons why residents over the world choose us. Here are just some of them.</p>
 
 
-        <div style="margin-top: 50px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around;">
-            <div style="width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 60px;">
+        <div style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; justify-content: center;">
+            <div class="choose-div" style="width: 28%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
                 <div style="position: relative;">
                     <div style="width: 50px; height: 50px; background: #79C9E5; border-radius: 50%;"></div>
                     <div style="position: absolute; left: -5px; top: -2px;"><i style="font-size: 50px; margin: 0 20px;" class="mdi mdi-account-group"></i></div>
@@ -303,7 +431,7 @@
                 <h3 style="font-size: 18px; margin-top: 20px; color: #404040;">Professional & Friendly Agents</h3>
                 <p style="color: #606060; font-size: 14px; margin-top: 10px; width: 80%; text-align: center;line-height: 20px;">Our agents are experienced and understanding experts who deliver fresh and effective solutions.</p>
             </div>
-            <div style="width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 60px;">
+            <div class="choose-div" style="width: 28%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
                 <div style="position: relative;">
                     <div style="width: 50px; height: 50px; background: #79C9E5; border-radius: 50%;"></div>
                     <div style="position: absolute; left: -5px; top: -2px;"><i style="font-size: 50px; margin: 0 20px;" class="mdi mdi-account-group"></i></div>
@@ -311,7 +439,7 @@
                 <h3 style="font-size: 18px; margin-top: 20px; color: #404040;">Professional & Friendly Agents</h3>
                 <p style="color: #606060; font-size: 14px; margin-top: 10px; width: 80%; text-align: center;line-height: 20px;">Our agents are experienced and understanding experts who deliver fresh and effective solutions.</p>
             </div>
-            <div style="width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 60px;">
+            <div class="choose-div" style="width: 28%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
                 <div style="position: relative;">
                     <div style="width: 50px; height: 50px; background: #79C9E5; border-radius: 50%;"></div>
                     <div style="position: absolute; left: -5px; top: -2px;"><i style="font-size: 50px; margin: 0 20px;" class="mdi mdi-account-group"></i></div>
@@ -319,7 +447,7 @@
                 <h3 style="font-size: 18px; margin-top: 20px; color: #404040;">Professional & Friendly Agents</h3>
                 <p style="color: #606060; font-size: 14px; margin-top: 10px; width: 80%; text-align: center;line-height: 20px;">Our agents are experienced and understanding experts who deliver fresh and effective solutions.</p>
             </div>
-            <div style="width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 60px;">
+            <div class="choose-div" style="width: 28%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
                 <div style="position: relative;">
                     <div style="width: 50px; height: 50px; background: #79C9E5; border-radius: 50%;"></div>
                     <div style="position: absolute; left: -5px; top: -2px;"><i style="font-size: 50px; margin: 0 20px;" class="mdi mdi-account-group"></i></div>
@@ -327,7 +455,7 @@
                 <h3 style="font-size: 18px; margin-top: 20px; color: #404040;">Professional & Friendly Agents</h3>
                 <p style="color: #606060; font-size: 14px; margin-top: 10px; width: 80%; text-align: center;line-height: 20px;">Our agents are experienced and understanding experts who deliver fresh and effective solutions.</p>
             </div>
-            <div style="width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 60px;">
+            <div class="choose-div" style="width: 28%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
                 <div style="position: relative;">
                     <div style="width: 50px; height: 50px; background: #79C9E5; border-radius: 50%;"></div>
                     <div style="position: absolute; left: -5px; top: -2px;"><i style="font-size: 50px; margin: 0 20px;" class="mdi mdi-account-group"></i></div>
@@ -335,7 +463,7 @@
                 <h3 style="font-size: 18px; margin-top: 20px; color: #404040;">Professional & Friendly Agents</h3>
                 <p style="color: #606060; font-size: 14px; margin-top: 10px; width: 80%; text-align: center;line-height: 20px;">Our agents are experienced and understanding experts who deliver fresh and effective solutions.</p>
             </div>
-            <div style="width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 60px;">
+            <div class="choose-div" style="width: 28%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
                 <div style="position: relative;">
                     <div style="width: 50px; height: 50px; background: #79C9E5; border-radius: 50%;"></div>
                     <div style="position: absolute; left: -5px; top: -2px;"><i style="font-size: 50px; margin: 0 20px;" class="mdi mdi-account-group"></i></div>
@@ -349,99 +477,123 @@
     </div>
     
     
-    <div style="margin: 0px 100px; margin-top: 50px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <div style="font-size: 14px; letter-spacing: 6px;">NEWS & UPDATES</div>
-        <h2 style="font-size: 30px; margin-top: 10px;">Stay Update with FabState Articles</h2>
 
-        <div style="margin-top: 30px; display: flex; align-items: center; justify-content: space-between;">
-            <div style="width: 32%; display: flex; flex-direction: column; border: 1px solid #606060; border-radius: 20px; overflow: hidden;">
-                <div>
-                    <img src="images/city3.jpg" alt="" style="width: 100%;">
-                </div>
-                <div style="padding: 20px;">
-                    <p style="color: #606060; font-size: 14px;">17 May 2025</p>
-                    <h3 style="font-size: 20px; margin-top: 10px; line-height: 24px; color: #404040;">Architecture is Not Based on Concrete and Steel</h3>
-                    <p style="color: #00749D; font-size: 16px; margin-top: 10px;">Vatsal Mishra</p>
-                </div>
-            </div>
-            <div style="width: 32%; display: flex; flex-direction: column; border: 1px solid #606060; border-radius: 20px; overflow: hidden;">
-                <div>
-                    <img src="images/city3.jpg" alt="" style="width: 100%;">
-                </div>
-                <div style="padding: 20px;">
-                    <p style="color: #606060; font-size: 14px;">17 May 2025</p>
-                    <h3 style="font-size: 20px; margin-top: 10px; line-height: 24px; color: #404040;">Architecture is Not Based on Concrete and Steel</h3>
-                    <p style="color: #00749D; font-size: 16px; margin-top: 10px;">Vatsal Mishra</p>
-                </div>
-            </div>
-            <div style="width: 32%; display: flex; flex-direction: column; border: 1px solid #606060; border-radius: 20px; overflow: hidden;">
-                <div>
-                    <img src="images/city3.jpg" alt="" style="width: 100%;">
-                </div>
-                <div style="padding: 20px;">
-                    <p style="color: #606060; font-size: 14px;">17 May 2025</p>
-                    <h3 style="font-size: 20px; margin-top: 10px; line-height: 24px; color: #404040;">Architecture is Not Based on Concrete and Steel</h3>
-                    <p style="color: #00749D; font-size: 16px; margin-top: 10px;">Vatsal Mishra</p>
-                </div>
-            </div>
-        </div>
+
+    
+    <div class="news-section">
+  <div class="news-subtitle">NEWS & UPDATES</div>
+  <h2 class="news-title">Stay Update with FabState Articles</h2>
+
+  <div class="news-cards-wrapper">
+    <div class="news-card">
+      <div class="news-card-image">
+        <img src="images/city3.jpg" alt="news" />
+      </div>
+      <div class="news-card-content">
+        <p class="news-date">17 May 2025</p>
+        <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+        <p class="news-author">Vatsal Mishra</p>
+      </div>
     </div>
 
-
-    <div style="margin: 0px 100px; margin-top: 80px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 60px;">
-        <div style="width: 49%; height: 430px; border: 1px solid #5DBAA6; border-radius: 20px; overflow: hidden;">
-            <img src="images/faq.jpg" alt="" style="width: 100%;">
-        </div>
-        <div style="width: 49%; height: 480px; margin-top: 25px;">
-            <h6 style="font-size: 14px; font-weight: 500; color: #5DBAA6; letter-spacing: 5px; margin-top: 40px;">QUESTION</h6>
-            <h2 style="font-size: 34px; margin-top: 10px; color: #404040;">Real Estate FAQs</h2>
-            <div style="border: 1px solid #5DBAA6; border-radius: 8px; padding: 15px; margin-top: 20px;">
-                <div style="font-size: 18px; color: #404040; display: flex; align-items: center; justify-content: space-between;">
-                    <div>This is the quation This is the quation This is the quation?</div>
-                    <div>
-                        <i style="font-size: 24px; color: #429784;" class="mdi mdi-chevron-up"></i>
-                    </div>
-                </div>
-                <div style="font-size: 14px; color: #606060; padding: 5px 10px 0px; line-height: 20px;">This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer.</div>
-            </div>
-            <div style="border: 1px solid #5DBAA6; border-radius: 8px; padding: 10px; margin-top: 15px;">
-                <div style="font-size: 18px; color: #404040; display: flex; align-items: center; justify-content: space-between;">
-                    <div>This is the quation This is the quation This is the quation?</div>
-                    <div>
-                        <i style="font-size: 24px; color: #429784;" class="mdi mdi-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
-            <div style="border: 1px solid #5DBAA6; border-radius: 8px; padding: 10px; margin-top: 15px;">
-                <div style="font-size: 18px; color: #404040; display: flex; align-items: center; justify-content: space-between;">
-                    <div>This is the quation This is the quation This is the quation?</div>
-                    <div>
-                        <i style="font-size: 24px; color: #429784;" class="mdi mdi-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
-            <div style="border: 1px solid #5DBAA6; border-radius: 8px; padding: 10px; margin-top: 15px;">
-                <div style="font-size: 18px; color: #404040; display: flex; align-items: center; justify-content: space-between;">
-                    <div>This is the quation This is the quation This is the quation?</div>
-                    <div>
-                        <i style="font-size: 24px; color: #429784;" class="mdi mdi-chevron-down"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="news-card">
+      <div class="news-card-image">
+        <img src="images/city3.jpg" alt="news" />
+      </div>
+      <div class="news-card-content">
+        <p class="news-date">17 May 2025</p>
+        <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+        <p class="news-author">Vatsal Mishra</p>
+      </div>
     </div>
 
+    <div class="news-card">
+      <div class="news-card-image">
+        <img src="images/city3.jpg" alt="news" />
+      </div>
+      <div class="news-card-content">
+        <p class="news-date">17 May 2025</p>
+        <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+        <p class="news-author">Vatsal Mishra</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    <div style="margin: 0px 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 60px;">
-        <h2 style="font-size: 30px;">Featured Agencies</h2>
-        <div style="margin-top: 40px; display: flex; align-items: center; gap: 20px; justify-content: space-between;">
-            <i style="font-size: 30px; color: #D2D2D2;" class="mdi mdi-chevron-left"></i>
-            <div style="width: 250px; height: 130px; background: #dfdfdf; border-radius: 20px;"></div>
-            <div style="width: 250px; height: 130px; background: #dfdfdf; border-radius: 20px;"></div>
-            <div style="width: 250px; height: 130px; background: #dfdfdf; border-radius: 20px;"></div>
-            <div style="width: 250px; height: 130px; background: #dfdfdf; border-radius: 20px;"></div>
-            <i style="font-size: 30px; color: #3B997A;" class="mdi mdi-chevron-right"></i>
+
+
+
+
+    <div class="faq-container">
+        <div class="faq-image">
+            <img src="images/faq.jpg" alt="">
+        </div>
+        <div class="faq-content">
+            <h6 class="faq-title">QUESTION</h6>
+            <h2 class="faq-heading">Real Estate FAQs</h2>
+
+            <div class="faq-item active">
+                <div class="faq-question">
+                    <div>This is the quation This is the quation This is the quation?</div>
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <div>This is the quation This is the quation This is the quation?</div>
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <div>This is the quation This is the quation This is the quation?</div>
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <div>This is the quation This is the quation This is the quation?</div>
+                    <i class="mdi mdi-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer This is answer.
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+
+
+    <div class="featured-section">
+        <h2 class="featured-title">Featured Agencies</h2>
+        <div class="carousel-wrapper">
+            <i class="mdi mdi-chevron-left carousel-button" id="scroll-left"></i>
+
+            <div class="carousel" id="carousel">
+            <div class="agency-card" style="background: #d2d2d2;"></div>
+            <div class="agency-card" style="background: #a4a4a4;"></div>
+            <div class="agency-card" style="background: #707070;"></div>
+            <div class="agency-card" style="background: #d2d2d2;"></div>
+            <div class="agency-card" style="background: #a4a4a4;"></div>
+            <div class="agency-card" style="background: #707070;"></div>
+            </div>
+
+            <i class="mdi mdi-chevron-right carousel-button active" id="scroll-right"></i>
         </div>
     </div>
 
@@ -449,95 +601,110 @@
   </main>
 
 
-  <footer style="background: #c2e6de; padding: 40px 100px 20px; color: #000000; font-size: 16px;">
-    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #5DBAA6; padding-bottom: 20px;">
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo-contact">
+      <a href="#"><img src="images/logo.png" alt="" class="footer-logo"></a>
+      <div class="footer-contact">
         <div>
-            <div>
-                <a href="#">
-                    <img src="images/logo.png" alt="" style="height: 40px; width: auto;">
-                </a>
-            </div>
-            <div style="margin-top: 20px;">
-                <div style="line-height: 24px;">
-                    53 abcd franchise street,<br>
-                    gurugram, 785645<br>
-                    fabrico@website.com<br>
-                    123-456-7890
-                </div>
-                <div style="display: flex; align-items: center; margin-top: 20px;">
-                    <a
-                    href="#"
-                    style="text-decoration: none; margin-right: 10px;"
-                    >
-                    <i style="color: #000000; font-size: 25px;" class="mdi mdi-whatsapp"></i>
-                    </a>
-                    <a
-                    href="#"
-                    style="text-decoration: none; margin-right: 10px;"
-                    >
-                    <i style="color: #000000; font-size: 25px;" class="mdi mdi-facebook"></i>
-                    </a>
-                    <a
-                    href="#"
-                    style="text-decoration: none; margin-right: 10px;"
-                    >
-                    <i style="color: #000000; font-size: 25px;" class="mdi mdi-instagram"></i>
-                    </a>
-                    <a
-                    href="#"
-                    style="text-decoration: none; margin-right: 10px;"
-                    >
-                    <img
-                        src="images/twitter-black.png"
-                        width="18"
-                        height="18"
-                        alt="twitter_logo"
-                    />
-                    </a>
-                </div>
-            </div>
+          53 abcd franchise street,<br>
+          gurugram, 785645<br>
+          fabrico@website.com<br>
+          123-456-7890
         </div>
-
-        <div style="display: flex; gap: 150px;">
-            <div>
-                <h6 style="color: #1E1E1E; font-size: 20px;">Services</h6>
-                <ul style="list-style-type: none; margin-top: 20px;">
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">About Us</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">Listing</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">Our Blog</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">Terms & Condition</a></li>
-                    <li><a href="#" style="text-decoration: none; color: #000000;">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div>
-                <h6 style="color: #1E1E1E; font-size: 20px;">Features</h6>
-                <ul style="list-style-type: none; margin-top: 20px;">
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">Floor Plans</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">Guides</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">Market Intelligence</a></li>
-                    <li style="margin-bottom: 12px;"><a href="#" style="text-decoration: none; color: #000000;">Events</a></li>
-                </ul>
-            </div>
+        <div class="footer-social-icons">
+          <a href="#"><i class="mdi mdi-whatsapp"></i></a>
+          <a href="#"><i class="mdi mdi-facebook"></i></a>
+          <a href="#"><i class="mdi mdi-instagram"></i></a>
+          <a href="#"><img src="images/twitter-black.png" width="18" height="18" alt="twitter_logo"></a>
         </div>
-    </div>
-    
-    
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px;">
-        <div>
-            <div style="font-size: 14px; margin-top: 5px;"><i style="color: #000000; font-size: 12px; margin-right: 2px;" class="mdi mdi-copyright"></i>2025 Fabrico Cleaning Solution Private Limited</div>
-        </div>
-
-        <div>
-            <a href="#" style="text-decoration: none;">
-                <img src="images/appstore.png" alt="" style="height: 40px; width: auto;">
-            </a>
-            <a href="#" style="text-decoration: none;">
-                <img src="images/googleplay.png" alt="" style="height: 40px; width: auto;">
-            </a>
-        </div>
+      </div>
     </div>
 
-  </footer>
-  
+    <div class="footer-links">
+      <div>
+        <h6 class="footer-heading">Services</h6>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Listing</a></li>
+          <li><a href="#">Our Blog</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6 class="footer-heading">Features</h6>
+        <ul>
+          <li><a href="#">Floor Plans</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Market Intelligence</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      <i class="mdi mdi-copyright"></i>2025 Fabrico Cleaning Solution Private Limited
+    </div>
+    <div class="footer-apps">
+      <a href="#"><img src="images/appstore.png" alt="App Store"></a>
+      <a href="#"><img src="images/googleplay.png" alt="Google Play"></a>
+    </div>
+  </div>
+</footer>
+
+
+
 </body>
+
+<script>
+    function showCityContent(city) {
+        const citySections = document.querySelectorAll('.city-content');
+        citySections.forEach(section => {
+            section.style.display = section.dataset.city === city ? 'flex' : 'none';
+        });
+    }
+    window.addEventListener('DOMContentLoaded', () => {
+        const radios = document.querySelectorAll('input[name="city-tab"]');
+        radios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                showCityContent(radio.labels[0].textContent.trim());
+            });
+        });
+
+        showCityContent(document.querySelector('input[name="city-tab"]:checked').labels[0].textContent.trim());
+    });
+
+
+
+
+    document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
+  });
+
+
+
+
+  const carousel = document.getElementById('carousel');
+  const scrollLeftBtn = document.getElementById('scroll-left');
+  const scrollRightBtn = document.getElementById('scroll-right');
+
+  const scrollAmount = 270; // px
+
+  scrollLeftBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  scrollRightBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+
+
+</script>
+
+
 </html>
