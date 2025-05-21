@@ -26,8 +26,8 @@
         <li class="nav-right nav-right-mobile">
             <div class="nav-right-section">
                 <div class="nav-right-icon">
-                    <i class="mdi mdi-heart-outline"></i>
-                    <i class="mdi mdi-bookmark-outline"></i>
+                    <i class="mdi mdi-heart-outline" style="cursor: pointer;"></i>
+                    <i class="mdi mdi-bookmark-outline" style="cursor: pointer;"></i>
                 </div>
                 <button><i class="mdi mdi-account-circle"></i>Log in</button>
             </div>
@@ -528,6 +528,9 @@
       </div>
     </div>
   </div>
+
+  <button class="city-btn news-btn" style="height: 50px; width: 200px; background: #DCEBE6; border-radius: 8px; border: none; color: #575757; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 30px;">See All Articles</button>
+
 </div>
 
 
@@ -711,7 +714,7 @@ function toggleMobileMenu() {
   const scrollLeftBtn = document.getElementById('scroll-left');
   const scrollRightBtn = document.getElementById('scroll-right');
 
-  const scrollAmount = 270; // px
+  const scrollAmount = 270;
 
   scrollLeftBtn.addEventListener('click', () => {
     carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
@@ -733,9 +736,8 @@ function toggleMobileMenu() {
     const carousel = document.getElementById("carousel");
     const scrollRight = document.getElementById("scroll-right");
     const scrollLeft = document.getElementById("scroll-left");
-    const scrollAmount = 270; // adjust based on card width + gap
+    const scrollAmount = 270;
 
-    // Manual scroll buttons
     scrollRight.addEventListener("click", () => {
       carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     });
@@ -744,20 +746,17 @@ function toggleMobileMenu() {
       carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
 
-    // Auto-scroll
     let autoScroll = setInterval(() => {
-      // Scroll to the right
+
       carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 
-      // If we've reached the end, reset to the beginning
       if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - scrollAmount) {
         setTimeout(() => {
           carousel.scrollTo({ left: 0, behavior: 'smooth' });
-        }, 1500); // pause before resetting
+        }, 1500);
       }
-    }, 3000); // scroll every 3 seconds
+    }, 3000);
 
-    // Optional: pause on hover
     carousel.addEventListener("mouseenter", () => clearInterval(autoScroll));
     carousel.addEventListener("mouseleave", () => {
       autoScroll = setInterval(() => {
@@ -773,7 +772,7 @@ function toggleMobileMenu() {
   });
 
 
-  
+
 
 
 </script>

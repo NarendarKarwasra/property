@@ -1722,12 +1722,17 @@ nav a:hover .nav-icon{
   margin-top: 6px;
   line-height: 18px;
 }
-
 .news-author {
   font-size: 14px;
   margin-top: 6px;
 }
 
+.news-btn{
+  height: 40px !important;
+  width: 160px !important;
+  font-size: 14px !important;
+  margin-top: 0px !important;
+}
 
 
 
