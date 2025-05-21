@@ -722,6 +722,60 @@ function toggleMobileMenu() {
   });
 
 
+
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.getElementById("carousel");
+    const scrollRight = document.getElementById("scroll-right");
+    const scrollLeft = document.getElementById("scroll-left");
+    const scrollAmount = 270; // adjust based on card width + gap
+
+    // Manual scroll buttons
+    scrollRight.addEventListener("click", () => {
+      carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    scrollLeft.addEventListener("click", () => {
+      carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    // Auto-scroll
+    let autoScroll = setInterval(() => {
+      // Scroll to the right
+      carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+
+      // If we've reached the end, reset to the beginning
+      if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - scrollAmount) {
+        setTimeout(() => {
+          carousel.scrollTo({ left: 0, behavior: 'smooth' });
+        }, 1500); // pause before resetting
+      }
+    }, 3000); // scroll every 3 seconds
+
+    // Optional: pause on hover
+    carousel.addEventListener("mouseenter", () => clearInterval(autoScroll));
+    carousel.addEventListener("mouseleave", () => {
+      autoScroll = setInterval(() => {
+        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+
+        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - scrollAmount) {
+          setTimeout(() => {
+            carousel.scrollTo({ left: 0, behavior: 'smooth' });
+          }, 1500);
+        }
+      }, 3000);
+    });
+  });
+
+
+  
+
+
 </script>
 
 
