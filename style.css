@@ -1490,20 +1490,22 @@ nav a:hover .nav-icon{
   .banner-left-content{
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: static;
+    align-items: center;
 }
 .banner-left-back{
   width: 90%;
   height: 150px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 .banner-left-main{
-  left: 0vw;
+  left: auto;
   width: 90%;
   top: 10px;
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1757,7 +1759,7 @@ nav a:hover .nav-icon{
       font-size: 20px;
     }
     .faq-item {
-      padding: 10px;
+      padding: 15px;
       margin-top: 15px;
       text-align: left;
     }
