@@ -1,0 +1,972 @@
+.back-links{
+        margin: 20px 100px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    .back-links button {
+        font-size: 14px;
+        color: #5DBAA6;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .top-section{
+        margin: 40px 100px;
+    }
+    .name-section{
+        display: flex;
+        align-items: last baseline;
+        justify-content: space-between;
+    }
+    .name-div h2{
+        font-size: 35px;
+    }
+    .name-div div{
+        margin: 10px 0;
+        font-size: 16px;
+        color: #8D8D8D;
+    }
+    .button-div button{
+        width: 110px;
+        height: 40px;
+        border-radius: 4px;
+        background: #D8F0EB;
+        color: #24826E;
+        font-size: 16px;
+        padding: 8px;
+        border: none;
+        margin-left: 6px;
+        cursor: pointer;
+    }
+    .img-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .img-section div{
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .img-section-big{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-section-small{
+        width: 49%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img-section-small-left{
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img-section-small-right{
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img-section-btn-div{
+        position: relative;
+    }
+    .transparent-back{
+        background: #000;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 0.6;
+    }
+    .transparent-back-btn{
+        background: #5DBAA6;
+        width: 140px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 11;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .transparent-back-btn:hover{
+        background: #2da389;
+    }
+
+
+
+    .content-full{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 100px;
+        margin-top: 0px;
+    }
+    .content-left{
+        width: 73%;
+    }
+    .content-right{
+        width: 25%;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .price{
+        font-size: 26px;
+        color: #5DBAA6;
+        font-weight: 600;
+    }
+    .price span{
+        font-size: 22px;
+        margin-right: 10px;
+        color: #000;
+        font-weight: 500;
+    }
+
+    .about{
+        display: flex;
+        gap: 30px;
+        margin-top: 15px;
+    }
+    .about div{
+        display: flex;
+        align-items: center;
+
+    }
+    .about div img{
+        width: 20px;
+        margin-right: 10px;
+    }
+    .detail a{
+        margin-top: 10px;
+        color: #00749D;
+        font-size: 20px;
+    }
+
+    .feature{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .feature div{
+        font-size: 16px;
+        color: #31917C;
+    }
+
+    .contact-div{
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .contact-div button{
+        background: #D8F0EB;
+        border: none;
+        padding: 8px 20px;
+        font-size: 16px;
+        color: #24826E;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+    }
+    .contact-div button i{
+        font-size: 24px;
+    }
+
+
+
+
+    .info-full{
+        margin-bottom: 30px;
+    }
+    .info-full h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #F6FAF9;
+    }
+    td {
+        border: 1px solid #BABABA;
+        padding: 13px 20px;
+        width: 100%;
+        display: flex;
+    }
+    tr{
+        border-collapse: collapse;
+        display: flex;
+    }
+    .td-left{
+        width: 200px;
+    }
+    .td-right{
+        font-weight: 600;
+        color: #484848;
+    }
+
+
+
+    .amenities-main{
+        margin-top: 40px;
+    }
+    .amenities-main h2{
+        font-size: 20px;
+    }
+    .amen{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        margin-bottom: 20px;
+        
+    }
+    .amen-single{
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        background: #E6F3F8;
+        border-radius: 4px;
+        width: 280px;
+    }
+    .amen-single-img{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    .amen-single-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .amenities-main a{
+        text-decoration: none;
+        color: #00749D;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .amen-more{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .floor-main{
+        margin-top: 40px;
+    }
+    .floor-main h3{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .floor-btn{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .floor-btn button{
+        padding: 10px 30px;
+        border-radius: 6px 6px 0 0;
+        font-size: 16px;
+        background-color: #fff;
+        color: #5DBAA6;
+        border: 2px solid #5DBAA6;
+        border-bottom: none;
+    }
+    .floor-btn .active{
+        background-color: #5DBAA6;
+        color: white;
+        border: 2px solid #5DBAA6;
+        border-bottom: none;
+    }
+    .floor{
+        padding: 20px;
+        border: 1px solid #5DBAA6;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .floor-small{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .floor-small div{
+        border: 1px solid #5DBAA6;
+        border-radius: 4px;
+    }
+    .floor-big{
+        width: 78%;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .floor-big img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .map{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #BABABA;
+        border-radius: 8px;
+    }
+    .map-back{
+        opacity: 0.3;
+    }
+    .map-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    .map-btn button{
+        border: none;
+        background: #5DBAA6;
+        border-radius: 8px;
+        padding: 10px 24px;
+        color: #fff;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .map-btn button i{
+        font-size: 20px;
+    }
+
+
+    .alert{
+        border: 1px solid #BABABA;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .alert p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .alert button{
+        border: 1px solid #5DBAA6;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 14px;
+        background: none;
+        color: #5DBAA6;
+        display: flex;
+        align-items: center;
+    }
+    .alert button i{
+        font-size: 18px;
+    }
+
+    .right-extra{
+        padding: 10px;
+        border: 1px solid #BABABA;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+    .right-extra h6{
+        font-size: 16px;
+    }
+    .right-extra ol{
+        margin-left: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .right-extra ol li{
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #7a7a7a;
+    }
+    .right-extra a{
+        text-decoration: none;
+        color: #267A68;
+        font-size: 14px;
+    }
+
+
+
+    .Recommended{
+        margin: 60px 100px;
+    }
+    .Recommended h1{
+        font-size: 20px;
+    }
+    .city-btn{
+        margin: auto;
+        height: 40px;
+        width: 300px;
+        background: #DCEBE6;
+        border-radius: 4px;
+        border: none;
+        color: #575757;
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+    @media (max-width: 1200px) {
+        .td-left{
+            width: 150px;
+        }
+        .img-section-big{
+        width: 50.5%;
+    }
+    .img-section-small{
+        width: 48.5%;
+    }
+    }
+
+
+
+  
+  
+  
+  
+        @media (max-width: 1000px) {
+        .back-links{
+        margin: 20px 5vw;
+    }
+    .back-links button {
+        font-size: 12px;
+    }
+    .top-section{
+        margin: 0px 5vw;
+    }
+    .name-div h2{
+        font-size: 30px;
+    }
+    .name-div div{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .button-div button{
+        height: 35px;
+        font-size: 14px;
+        padding: 0px;
+        margin-left: 4px;
+    }
+    .img-section{
+        margin-top: 10px;
+    }
+    .img-section div{
+        border-radius: 4px;
+    }
+
+    .img-section-big{
+        width: 67%;
+    }
+    .img-section-small{
+        width: 32%;
+    }
+    .img-section-small-left{
+        display: none;
+    }
+    .img-section-small-right{
+        width: 100%;
+    }
+
+
+    .content-full{
+        margin: 0px 5vw;
+        margin-top: 20px;
+    }
+    .price{
+        font-size: 22px;
+    }
+    .price span{
+        font-size: 20px;
+    }
+    .about{
+        margin-top: 10px;
+    }
+    .contact-div{
+        gap: 10px;
+    }
+    .contact-div button{
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    .contact-div button i{
+        font-size: 22px;
+    }
+
+
+    .info-full h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #F6FAF9;
+        display: flex;
+        border: 1px solid #BABABA;
+        border-radius: 8px;
+    }
+    td {
+        padding: 15px 20px;
+        border: none !important;
+    }
+    tr{
+        flex-direction: column;
+    }
+    .td-left{
+        width: 30vw;
+    }
+    .td-right{
+        font-weight: 600;
+        color: #484848;
+    }
+
+    
+    .amenities-main h2{
+        font-size: 18px;
+    }
+    .amen{
+        gap: 10px;
+    }
+    .amen-single{
+        padding: 10px;
+        width: 47%;
+    }
+    .amen-single-img{
+        margin-right: 10px;
+    }
+    .amenities-main a{
+        font-size: 18px;
+    }
+    .floor-btn button{
+        padding: 8px 25px;
+        font-size: 14px;
+        border: 1px solid #5DBAA6;
+    }
+    .floor{
+        padding: 10px;
+        margin-top: -1px;
+    }
+    .floor-small{
+        gap: 5px;
+    }
+
+
+    .map-btn button{
+        border-radius: 4px;
+        padding: 6px;
+        font-size: 14px;
+    }
+    .map-btn button i{
+        font-size: 16px;
+        margin-right: 4px !important;
+    }
+
+
+    .alert{
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .alert p{
+        margin-bottom: 10px;
+    }
+    .alert button{
+        padding: 6px;
+    }
+    .alert button i{
+        font-size: 16px;
+    }
+
+    .right-extra{
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .right-extra h6{
+        font-size: 14px;
+    }
+    .right-extra ol{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .Recommended{
+        margin: 40px 5vw;
+    }
+    .Recommended h1{
+        font-size: 20px;
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+    @media (max-width: 750px) {
+        .img-section-big{
+        width: 67.5%;
+    }
+    .img-section-small{
+        width: 31.5%;
+    }
+    }
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+@media (max-width: 600px) {
+        .back-links{
+        margin: 10px 5vw;
+    }
+    .name-div h2{
+        font-size: 20px;
+    }
+    .name-div div{
+        font-size: 12px;
+    }
+    .button-div button{
+        height: 30px;
+        font-size: 14px;
+        margin-left: 2px;
+        width: 80px;
+    }
+    .img-section{
+        margin-top: 10px;
+    }
+    .img-section-big{
+        width: 67.7%;
+    }
+    .img-section-small{
+        width: 31.3%;
+    }
+
+    .transparent-back-btn{
+        width: 90px;
+        height: 30px;
+        border-radius: 30px;
+        font-size: 14px;
+    }
+
+
+    .content-full{
+        margin: 0px 5vw;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .content-left{
+        width: 100%;
+    }
+    .content-right{
+        width: 100%;
+    }
+    .detail{
+        margin-bottom: 20px;
+    }
+    .price{
+        font-size: 20px;
+    }
+    .price span{
+        font-size: 16px;
+        margin-right: 6px;
+    }
+    .about{
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .about div img{
+        width: 16px;
+        margin-right: 6px;
+    }
+    .detail a{
+        font-size: 16px;
+    }
+    .feature{
+        margin-top: 10px;
+    }
+    .feature div{
+        font-size: 14px;
+    }
+    .feature span{
+        width: 1px !important;
+        height: 14px !important;
+    }
+    
+    .contact-div{
+        margin-top: 15px;
+        gap: 6px;
+    }
+    .contact-div button{
+        padding: 4px 14px;
+        font-size: 14px;
+    }
+    .contact-div button i{
+        font-size: 18px;
+        margin-right: 4px !important;
+    }
+
+
+
+    .info-full{
+        margin-bottom: 20px;
+    }
+    .info-full h2{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    table {
+        border-radius: 4px;
+    }
+    td {
+        padding: 10px;
+    }
+    .td-left{
+        width: 40vw;
+    }
+
+
+    .amenities-main{
+        margin-top: 30px;
+    }
+    .amenities-main h2{
+        font-size: 16px;
+    }
+    .amenities-main a{
+        font-size: 16px;
+    }
+    .amen-single div{
+        font-size: 14px;
+    }
+
+
+
+    .floor-main{
+        margin-top: 30px;
+    }
+    .floor-main h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .floor-btn button{
+        padding: 4px 10px;
+    }
+    .floor{
+        padding: 6px;
+    }
+    .floor-small{
+        gap: 4px;
+    }
+
+
+
+
+    .map{
+        margin-top: 20px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    .map-btn button{
+        padding: 8px 20px;
+    }
+    .map-btn button i{
+        font-size: 18px;
+    }
+
+    .Recommended h1{
+        font-size: 16px;
+    }
+    .city-btn{
+        height: 35px;
+        width: 240px;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+    .city-content{
+        margin-top: 10px !important;
+    }
+
+    }
+
+
+
+
+
+
+
+
+    @media (max-width: 400px) {
+
+
+    .button-div{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .button-div button{
+        height: 25px;
+        margin-left: 0px;
+        width: 70px;
+        border-radius: 2px;
+    }
+    .img-section-big{
+        width: 68%;
+    }
+    .img-section-small{
+        width: 30.5%;
+    }
+
+    .transparent-back-btn{
+        width: 60px;
+        background: none;
+        color: #52ffda;
+    }
+
+    .content-full{
+        margin-top: 10px;
+    }
+    .about{
+        gap: 10px;
+        font-size: 14px;
+    }
+    .about div img{
+        width: 14px;
+        margin-right: 4px;
+    }
+    .detail a{
+        font-size: 14px;
+    }
+    .detail a i{
+        margin-left: 1px !important;
+    }
+    .feature{
+        margin-top: 10px;
+        gap: 6px;
+    }
+    .feature div{
+        font-size: 13px;
+    }
+    td {
+        padding: 6px;
+        font-size: 14px;
+    }
+    .td-left{
+        width: 45vw;
+    }
+
+    .amen{
+        gap: 6px;
+    }
+    .amen-single{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .amenities-main{
+        margin-top: 20px;
+    }
+    .amenities-main a{
+        font-size: 14px;
+    }
+    .amen-single div{
+        font-size: 12px;
+    }
+
+
+
+    .floor-main{
+        margin-top: 30px;
+    }
+    .floor-main h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .floor-btn button{
+        padding: 4px 10px;
+    }
+    .floor{
+        padding: 6px;
+    }
+    .floor-small{
+        gap: 4px;
+    }
+
+
+
+
+    .map{
+        margin-top: 20px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    .map-btn button{
+        padding: 8px 20px;
+    }
+    .map-btn button i{
+        font-size: 18px;
+    }
+
+
+    .Recommended{
+        /* margin: 60px 100px; */
+    }
+    .Recommended h1{
+        font-size: 16px;
+    }
+    .city-btn{
+        height: 35px;
+        width: 240px;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+
+
+    }
