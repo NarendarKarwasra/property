@@ -89,60 +89,93 @@
       </div>
 
       <div class="banner-right-main" `>
-        <div class="banner-right-tabs">
-          <div class="prop-tabs">
-            <input type="radio" name="prop-tab" id="prop-tab1" checked>
-            <label for="prop-tab1" class="prop-tab">Properties</label>
-
-            <input type="radio" name="prop-tab" id="prop-tab2">
-            <label for="prop-tab2" class="prop-tab">New Projects</label>
-
-            <input type="radio" name="prop-tab" id="prop-tab3">
-            <label for="prop-tab3" class="prop-tab">Transactions</label>
-
-          </div>
-        </div>
 
         <div class="banner-right-form-main">
+
+          <div class="banner-right-tabs">
+            <div class="prop-tabs">
+              <input type="radio" name="prop-tab" id="prop-tab1" checked>
+              <label for="prop-tab1" class="prop-tab">Properties</label>
+
+              <input type="radio" name="prop-tab" id="prop-tab2">
+              <label for="prop-tab2" class="prop-tab">New Projects</label>
+
+            </div>
+          </div>
+          
+          <div class="banner-right-tabs">
+            <div class="all-tabs">
+              <input type="radio" name="all-tab" id="all-tab1" checked>
+              <label for="all-tab1" class="all-tab">All</label>
+
+              <input type="radio" name="all-tab" id="all-tab2">
+              <label for="all-tab2" class="all-tab">Off Plan</label>
+
+              <input type="radio" name="all-tab" id="all-tab3">
+              <label for="all-tab3" class="all-tab">Ready</label>
+
+            </div>
+          </div>
 
           <div class="banner-right-form">
 
             <div class="banner-form-outer">
               <i class="banner-form-i mdi mdi-map-marker"></i>
-              <input class="banner-form-input-loction" type="text" placeholder="Enter location" />
+              <input class="banner-form-input-loction" type="text" placeholder="Enter Location" />
             </div>
 
             <div class="banner-form-outer">
               <i class="banner-form-i mdi mdi-home-city-outline"></i>
-              <select class="banner-form-input-residential">
-                <option disabled selected>Residential</option>
-                <option value="one">Apartment</option>
-                <option value="two">Townhouse</option>
-                <option value="three">Villa Compound</option>
-                <option value="three">Others</option>
-              </select>
-            </div>
-
-            <div style="display: flex; align-items: center; gap: 20px;">
-              <div class="banner-form-both-select">
-                <select class="banner-form-select-inner">
-                  <option disabled selected>Beds & Baths</option>
-                  <option value="one">1 Bed & 1 Bath</option>
-                  <option value="two">2 Bed & 1 Bath</option>
-                  <option value="three">2 Bed & 2 Bath</option>
-                </select>
-              </div>
-
-              <div class="banner-form-both-select">
-                <select class="banner-form-select-inner">
-                  <option disabled selected>Price</option>
-                  <option value="one">Minimum</option>
-                  <option value="two">Maximum</option>
-                </select>
+              <div class="custom-dropdown">
+                <div class="custom-select" onclick="toggleDropdown()">Property Type</div>
+                <ul class="custom-options">
+                  <li onclick="selectOption(this)">Residential</li>
+                  <li onclick="selectOption(this)">Commercial</li>
+                  <li onclick="selectOption(this)">Others</li>
+                </ul>
               </div>
             </div>
 
-            <button class="banner-form-btn">Search</button>
+
+            <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
+              <div class="banner-form-both-select">
+                  <div class="custom-dropdown1">
+                    <div class="custom-select1" onclick="toggleDropdown1()">Beds & Baths</div>
+                    <ul class="custom-options1">
+                      <li onclick="selectOption1(this)">1 Bed & 1 Bath</li>
+                      <li onclick="selectOption1(this)">2 Bed & 1 Bath</li>
+                      <li onclick="selectOption1(this)">2 Bed & 2 Bath</li>
+                    </ul>
+                  </div>
+              </div>
+
+              <div class="banner-form-both-select">
+                <div class="custom-dropdown-price">
+                  <div class="custom-select-price" onclick="toggleDropdownPrice()">Price (&#8377;)</div>
+                  <ul class="custom-options-price">
+                    <li onclick="selectOptionPrice(this)">0 to 50L</li>
+                    <li onclick="selectOptionPrice(this)">50L to 2Cr</li>
+                    <li onclick="selectOptionPrice(this)">2Cr+</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
+              <div class="banner-form-both-select">
+                <div class="custom-dropdown-area">
+                  <div class="custom-select-area" onclick="toggleDropdownArea()">Area (sqft)</div>
+                  <ul class="custom-options-area">
+                    <li onclick="selectOptionArea(this)">0 to 1000 sqft</li>
+                    <li onclick="selectOptionArea(this)">1000 to 2000 sqft</li>
+                    <li onclick="selectOptionArea(this)">2000+ sqft</li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="banner-form-btn">Search</button>
+            </div>
 
           </div>
 
@@ -165,7 +198,7 @@
           <h2 class="appoinment-content-head1">Find Your Dream Home</h2>
           <h2 class="appoinment-content-head2">Make A Free Schedule To Appointment</h2>
           <p class="appoinment-content-p">Click below for appointment.</p>
-          <button class="btn-hover appoinment-content-btn">Make an Appoinment</button>
+          <button class="btn-hover appoinment-content-btn btn-up">Make an Appoinment</button>
         </div>
       </div>
     </div>
@@ -178,7 +211,7 @@
 
 
 
-    <div class="city-main"
+    <div class="city-main slide-up"
       style="margin: 0px 100px; margin-top: 50px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 1px solid #B3B3B3; padding-bottom: 40px;">
       <h2 style="font-size: 30px;">Browse New Projects in Lucknow</h2>
 
@@ -450,7 +483,7 @@
 
 
 
-    <div class="choose-main"
+    <div class="choose-main slide-up"
       style="margin: 0px 100px; margin-top: 50px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 1px solid #B3B3B3;">
       <div style="font-size: 14px; letter-spacing: 6px;">WHY CHOOSE US</div>
       <h2 style="font-size: 30px; margin-top: 10px;">6 Reason to Choose FabState</h2>
@@ -540,60 +573,90 @@
     </div>
 
 
+<div class="news-section slide-up">
+  <div class="news-subtitle">NEWS & UPDATES</div>
+  <h2 class="news-title">Stay Update with FabState Articles</h2>
 
-
-
-    <div class="news-section">
-      <div class="news-subtitle">NEWS & UPDATES</div>
-      <h2 class="news-title">Stay Update with FabState Articles</h2>
-
-      <div class="news-cards-wrapper">
-        <div class="news-card">
-          <div class="news-card-image">
-            <img src="images/city3.jpg" alt="news" />
-          </div>
-          <div class="news-card-content">
-            <p class="news-date">17 May 2025</p>
-            <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
-            <p class="news-author">Vatsal Mishra</p>
-          </div>
+  <div class="news-carousel-container">
+    <button class="scroll-btn left">&#10094;</button>
+    
+    <div class="news-cards-wrapper" id="newsCards">
+      <div class="news-card">
+        <div class="news-card-image">
+          <img src="images/city3.jpg" alt="news" />
         </div>
-
-        <div class="news-card">
-          <div class="news-card-image">
-            <img src="images/city3.jpg" alt="news" />
-          </div>
-          <div class="news-card-content">
-            <p class="news-date">17 May 2025</p>
-            <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
-            <p class="news-author">Vatsal Mishra</p>
-          </div>
-        </div>
-
-        <div class="news-card">
-          <div class="news-card-image">
-            <img src="images/city3.jpg" alt="news" />
-          </div>
-          <div class="news-card-content">
-            <p class="news-date">17 May 2025</p>
-            <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
-            <p class="news-author">Vatsal Mishra</p>
-          </div>
+        <div class="news-card-content">
+          <p class="news-date">17 May 2025</p>
+          <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+          <p class="news-author">Vatsal Mishra</p>
         </div>
       </div>
-
-      <button class="city-btn news-btn"
-        style="height: 50px; width: 200px; background: #DCEBE6; border-radius: 8px; border: none; color: #575757; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 30px;">See
-        All Articles</button>
-
+      <div class="news-card">
+        <div class="news-card-image">
+          <img src="images/city3.jpg" alt="news" />
+        </div>
+        <div class="news-card-content">
+          <p class="news-date">17 May 2025</p>
+          <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+          <p class="news-author">Vatsal Mishra</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-image">
+          <img src="images/city3.jpg" alt="news" />
+        </div>
+        <div class="news-card-content">
+          <p class="news-date">17 May 2025</p>
+          <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+          <p class="news-author">Vatsal Mishra</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-image">
+          <img src="images/city3.jpg" alt="news" />
+        </div>
+        <div class="news-card-content">
+          <p class="news-date">17 May 2025</p>
+          <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+          <p class="news-author">Vatsal Mishra</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-image">
+          <img src="images/city3.jpg" alt="news" />
+        </div>
+        <div class="news-card-content">
+          <p class="news-date">17 May 2025</p>
+          <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+          <p class="news-author">Vatsal Mishra</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-card-image">
+          <img src="images/city3.jpg" alt="news" />
+        </div>
+        <div class="news-card-content">
+          <p class="news-date">17 May 2025</p>
+          <h3 class="news-headline">Architecture is Not Based on Concrete and Steel</h3>
+          <p class="news-author">Vatsal Mishra</p>
+        </div>
+      </div>
     </div>
 
+    <button class="scroll-btn right">&#10095;</button>
+  </div>
+
+  <button class="city-btn news-btn"
+        style="height: 50px; width: 200px; background: #DCEBE6; border-radius: 8px; border: none; color: #575757; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 30px;">See
+        All Articles</button>
+</div>
 
 
 
 
 
-    <div class="faq-container">
+
+    <div class="faq-container slide-up">
       <div class="faq-image">
         <img src="images/faq.jpg" alt="">
       </div>
@@ -651,7 +714,7 @@
 
 
 
-    <div class="featured-section">
+    <div class="featured-section slide-up">
       <h2 class="featured-title">Featured Agencies</h2>
       <div class="carousel-wrapper">
         <i class="mdi mdi-chevron-left carousel-button" id="scroll-left"></i>
@@ -733,13 +796,13 @@
 
 <script>
 
-
+// mobile view
   function toggleMobileMenu() {
     document.querySelector('.nav-links').classList.toggle('active');
   }
 
 
-
+// city change
   function showCityContent(city) {
     const citySections = document.querySelectorAll('.city-content');
     citySections.forEach(section => {
@@ -760,6 +823,168 @@
 
 
 
+
+
+
+
+// banner form show options
+function toggleDropdown() {
+  const optionsList = document.querySelector('.custom-options');
+  optionsList.classList.toggle('show');
+}
+
+function selectOption(el) {
+  const selectBox = document.querySelector('.custom-select');
+  const options = document.querySelectorAll('.custom-options li');
+
+  options.forEach(opt => opt.classList.remove('selected'));
+
+  el.classList.add('selected');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options').classList.remove('show');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options').classList.remove('show');
+  }
+});
+
+
+
+function toggleDropdown1() {
+  const optionsList = document.querySelector('.custom-options1');
+  optionsList.classList.toggle('show1');
+}
+
+function selectOption1(el) {
+  const selectBox = document.querySelector('.custom-select1');
+  const options = document.querySelectorAll('.custom-options1 li');
+
+  options.forEach(opt => opt.classList.remove('selected1'));
+
+  el.classList.add('selected1');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options1').classList.remove('show1');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown1');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options1').classList.remove('show1');
+  }
+});
+
+
+function toggleDropdownPrice() {
+  const optionsList = document.querySelector('.custom-options-price');
+  optionsList.classList.toggle('showPrice');
+}
+
+function selectOptionPrice(el) {
+  const selectBox = document.querySelector('.custom-select-price');
+  const options = document.querySelectorAll('.custom-options-price li');
+
+  options.forEach(opt => opt.classList.remove('selectedPrice'));
+
+  el.classList.add('selectedPrice');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options-price').classList.remove('showPrice');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown-price');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options-price').classList.remove('showPrice');
+  }
+});
+
+
+function toggleDropdownArea() {
+  const optionsList = document.querySelector('.custom-options-area');
+  optionsList.classList.toggle('showArea');
+}
+
+function selectOptionArea(el) {
+  const selectBox = document.querySelector('.custom-select-area');
+  const options = document.querySelectorAll('.custom-options-area li');
+
+  options.forEach(opt => opt.classList.remove('selectedArea'));
+
+  el.classList.add('selectedArea');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options-area').classList.remove('showArea');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown-area');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options-area').classList.remove('showArea');
+  }
+});
+
+
+
+
+// slide up animation
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".slide-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+
+
+
+
+
+// news
+document.addEventListener("DOMContentLoaded", () => {
+  const cardsWrapper = document.getElementById("newsCards");
+  const leftBtn = document.querySelector(".scroll-btn.left");
+  const rightBtn = document.querySelector(".scroll-btn.right");
+
+  function getScrollStep() {
+    return cardsWrapper.clientWidth * 0.339;
+  }
+
+  leftBtn.addEventListener("click", () => {
+    cardsWrapper.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    cardsWrapper.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
+  });
+
+  setInterval(() => {
+    const endReached = cardsWrapper.scrollLeft + cardsWrapper.clientWidth >= cardsWrapper.scrollWidth;
+    cardsWrapper.scrollTo({
+      left: endReached ? 0 : cardsWrapper.scrollLeft + getScrollStep(),
+      behavior: 'smooth'
+    });
+  }, 4000);
+});
+
+
+
+
+// faq item
   const faqItems = document.querySelectorAll('.faq-item');
 
   document.querySelectorAll('.faq-item').forEach(question => {
@@ -789,28 +1014,7 @@
 
 
 
-  const carousel = document.getElementById('carousel');
-  const scrollLeftBtn = document.getElementById('scroll-left');
-  const scrollRightBtn = document.getElementById('scroll-right');
-
-  const scrollAmount = 270;
-
-  scrollLeftBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  });
-
-  scrollRightBtn.addEventListener('click', () => {
-    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  });
-
-
-
-
-
-
-
-
-
+// scroll compony
   document.addEventListener("DOMContentLoaded", () => {
     const carousel = document.getElementById("carousel");
     const scrollRight = document.getElementById("scroll-right");
