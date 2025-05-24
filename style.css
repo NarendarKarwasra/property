@@ -1,8 +1,8 @@
-* {
+*, *::before, *::after {
+  position: relative;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  position: relative;
 }
 
 body {
@@ -671,20 +671,7 @@ input#all-tab3:checked~label[for="all-tab3"] {
   margin-bottom: 40px;
 }
 
-.appoinment-content-btn {
-  height: 50px;
-  width: 250px;
-  background: #1F9086;
-  border-radius: 30px;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
+
 
 
 
@@ -1140,6 +1127,134 @@ input#all-tab3:checked~label[for="all-tab3"] {
 
 
 
+.buttons {
+  border-radius: 30px;
+}
+
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  padding: 17px 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  transition: color 0.3s;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.blob-btn::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #1F9086;
+  border-radius: 30px;
+}
+
+.blob-btn::after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s 0.2s;
+  border-radius: 30px;
+}
+
+.blob-btn:hover {
+  color: #1F9086;
+  border-radius: 30px;
+}
+
+.blob-btn:hover::after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+.blob-btn__inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #1F9086;
+}
+
+.blob-btn__blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url('#goo');
+}
+
+.blob-btn__blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: #fff;
+  border-radius: 100%;
+  transform: translate3d(0,150%,0) scale(1.7);
+  transition: transform 0.3s;
+}
+
+@supports (filter: url('#goo')) {
+  .blob-btn__blob {
+    transform: translate3d(0,150%,0) scale(1.4);
+  }
+}
+
+.blob-btn__blob:nth-child(1) {
+  left: 0%;
+  transition-delay: 0s;
+}
+
+.blob-btn__blob:nth-child(2) {
+  left: 30%;
+  transition-delay: 0.08s;
+}
+
+.blob-btn__blob:nth-child(3) {
+  left: 60%;
+  transition-delay: 0.16s;
+}
+
+.blob-btn__blob:nth-child(4) {
+  left: 90%;
+  transition-delay: 0.24s;
+}
+
+.blob-btn:hover .blob-btn__blob {
+  transform: translateZ(0) scale(1.7);
+}
+
+@supports (filter: url('#goo')) {
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -1343,6 +1458,11 @@ input#all-tab3:checked~label[for="all-tab3"] {
   }
 
 
+  .blob-btn {
+  padding: 14px 45px;
+  font-size: 16px;
+}
+
 
 
 
@@ -1506,13 +1626,19 @@ input#all-tab3:checked~label[for="all-tab3"] {
     margin-bottom: 20px;
   }
 
-  .appoinment-content-btn {
-    height: 40px;
-    width: 220px;
-    font-size: 16px;
-  }
+  
 
 
+
+
+  
+
+.blob-btn {
+  padding: 12px 35px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
 
 
 
@@ -1905,13 +2031,10 @@ input#all-tab3:checked~label[for="all-tab3"] {
     margin-bottom: 10px;
   }
 
-  .appoinment-content-btn {
-    height: 30px;
-    width: 170px;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
+  .blob-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+}
 
   .city-main {
     margin-top: 40px !important;
@@ -2143,7 +2266,8 @@ input#all-tab3:checked~label[for="all-tab3"] {
     margin-bottom: 8px;
     margin-left: 20px;
   }
-  .appoinment-content-btn{
+  .blob-btn {
+    font-size: 12px;
     margin-left: 20px;
   }
 }
@@ -2179,7 +2303,8 @@ input#all-tab3:checked~label[for="all-tab3"] {
     margin-bottom: 5px;
     margin-left: 10px;
   }
-  .appoinment-content-btn{
+  .blob-btn {
+    padding: 6px 10px;
     margin-left: 10px;
   }
 
@@ -2211,9 +2336,9 @@ input#all-tab3:checked~label[for="all-tab3"] {
     margin-bottom: 5px;
     margin-left: 0px;
   }
-  .appoinment-content-btn{
+  .blob-btn {
+    padding: 4px 10px;
     margin-left: 0px;
-    width: 150px;
   }
 
 }
