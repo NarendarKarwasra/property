@@ -1,406 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Property</title>
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="extra.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="extra.css" />
 </head>
+
 <body>
 
-  <header>
-  <nav>
-    <a href="index.html" class="logo-link">
-      <img src="images/logo.png" alt="logo" class="logo" />
-    </a>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="logo" class="logo" />
+            </a>
 
-    <div class="hamburger" onclick="toggleMobileMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-    <ul class="nav-links">
-        <li class="nav-right nav-right-mobile">
-            <div class="nav-right-section">
+            <ul class="nav-links">
+                <li class="nav-right nav-right-mobile">
+                    <div class="nav-right-section">
+                        <div class="nav-right-icon">
+                            <i class="mdi mdi-heart-outline" style="cursor: pointer;"></i>
+                            <i class="mdi mdi-bookmark-outline" style="cursor: pointer;"></i>
+                        </div>
+                        <button><i class="mdi mdi-account-circle"></i>Log in</button>
+                    </div>
+                </li>
+                <li><a href="#">Floor Plans</a></li>
+                <li>
+                    <a href="#">Guides <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Buying Guide</a>
+                        <a href="#">Renting Guide</a>
+                        <a href="#">Selling Guide</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Market Intelligence <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Reports</a>
+                        <a href="#">Data Insights</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Events <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Upcoming Events</a>
+                        <a href="#">Past Events</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-right nav-right-desktop">
                 <div class="nav-right-icon">
-                    <i class="mdi mdi-heart-outline" style="cursor: pointer;"></i>
-                    <i class="mdi mdi-bookmark-outline" style="cursor: pointer;"></i>
+                    <i class="mdi mdi-heart-outline"></i>
+                    <i class="mdi mdi-bookmark-outline"></i>
                 </div>
                 <button><i class="mdi mdi-account-circle"></i>Log in</button>
             </div>
-        </li>
-      <li><a href="#">Floor Plans</a></li>
-      <li>
-        <a href="#">Guides <i class="nav-icon mdi mdi-chevron-down"></i></a>
-        <div class="dropdown">
-          <a href="#">Buying Guide</a>
-          <a href="#">Renting Guide</a>
-          <a href="#">Selling Guide</a>
-        </div>
-      </li>
-      <li>
-        <a href="#">Market Intelligence <i class="nav-icon mdi mdi-chevron-down"></i></a>
-        <div class="dropdown">
-          <a href="#">Reports</a>
-          <a href="#">Data Insights</a>
-        </div>
-      </li>
-      <li>
-        <a href="#">Events <i class="nav-icon mdi mdi-chevron-down"></i></a>
-        <div class="dropdown">
-          <a href="#">Upcoming Events</a>
-          <a href="#">Past Events</a>
-        </div>
-      </li>
-    </ul>
-
-    <div class="nav-right nav-right-desktop">
-  <div class="nav-right-icon">
-    <i class="mdi mdi-heart-outline"></i>
-    <i class="mdi mdi-bookmark-outline"></i>
-  </div>
-  <button><i class="mdi mdi-account-circle"></i>Log in</button>
-</div>
-  </nav>
-</header>
+        </nav>
+    </header>
 
 
 
-<div class="back-links">
-    <button>Home</button>
-    <i class="mdi mdi-chevron-right"></i>
-    <button>Property Listing </button>
-    <i class="mdi mdi-chevron-right"></i>
-    <button style="color: #000;">Property Detail</button>
-</div>
-
-
-
-<div class="top-section">
-    <div class="name-section">
-        <div class="name-div">
-            <h2>Gopal Villa</h2>
-            <div><i class="mdi mdi-map-marker" style="color: #5DBAA6; margin-right: 4px;"></i>Near demo mall, Lucknow</div>
-        </div>
-
-        <div class="button-div">
-            <button><i class="mdi mdi-heart-outline" style="margin-right: 8px;"></i>Save</button>
-            <button><i class="mdi mdi-share-variant-outline" style="margin-right: 8px;"></i>Share</button>
-        </div>
+    <div class="back-links">
+        <button>Home</button>
+        <i class="mdi mdi-chevron-right"></i>
+        <button>Property Listing </button>
+        <i class="mdi mdi-chevron-right"></i>
+        <button style="color: #000;">Property Detail</button>
     </div>
 
 
-    <div class="img-section">
-        <div class="img-section-big">
-            <img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt="">
-        </div>
 
-        <div class="img-section-small">
-            <div class="img-section-small-left">
-                <div><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                <div><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt=""></div>
-            </div>
-            <div  class="img-section-small-right">
-                <div><img src="images/detail4.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                <div class="img-section-btn-div">
-                    <img src="images/detail5.jpg" style="width: 100%; height: 100%;" alt="">
-                    <div class="transparent-back"></div>
-                    <button class="transparent-back-btn">Show All</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<div class="content-full">
-    <div class="content-left">
-        <div class="detail">
-            <div class="price"><span>Base Price: </span><i class="mdi mdi-currency-rupee" style="margin-right: 4px;"></i>4500000</div>
-
-            <div class="about">
-                <div><img src="images/bed.png" alt="">1 Bedroom</div>
-                <div><img src="images/bathtub.png" alt="">2 Bathroom</div>
-                <div><img src="images/area.png" alt="">1000 sqft</div>
+    <div class="top-section">
+        <div class="name-section">
+            <div class="name-div">
+                <h2>Gopal Villa</h2>
+                <div><i class="mdi mdi-map-marker" style="color: #5DBAA6; margin-right: 4px;"></i>Near demo mall,
+                    Lucknow</div>
             </div>
 
-            <a>See more<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
-
-            <div class="feature">
-                <div>Ground Floor</div> 
-                <span style="width: 2px; height: 16px; background: #D9D9D9;"></span>
-                <div>Best deal in Lucknow</div>
-                <span style="width: 2px; height: 16px; background: #D9D9D9;"></span>
-                <div>Private Garden</div>
-            </div>
-
-            <div class="contact-div">
-                <button><i class="mdi mdi-email-outline" style="margin-right: 8px;"></i>Email</button>
-                <button><i class="mdi mdi-phone-outline" style="margin-right: 8px;"></i>Call</button>
-                <button><i class="mdi mdi-whatsapp" style="margin-right: 8px;"></i>Whatsapp</button>
-            </div>
-
-        </div>
-
-        <div class="info-full">
-            <h2>Property Information</h2>
-            <div class="info">
-                <table>
-                    <tr>
-                        <td style="border-radius: 8px 0 0 0;">
-                            <div class="td-left">Type</div>
-                            <div class="td-right">Apartment</div>
-                        </td>
-                        <td style="border-radius: 0 8px 0 0;">
-                            <div class="td-left">Furnishing</div>
-                            <div class="td-right">Furnished</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="td-left">Purpose</div>
-                            <div class="td-right">For Sale</div>
-                        </td>
-                        <td>
-                            <div class="td-left">Added on</div>
-                            <div class="td-right">13 May 2025 </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="td-left">Reference no.</div>
-                            <div class="td-right">Lucnow-ba-5436</div>
-                        </td>
-                        <td>
-                            <div class="td-left">Handover Date</div>
-                            <div class="td-right">1st Quarter 2028</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border-radius: 0 0 0 8px;">
-                            <div class="td-left">1st Quarter 2028</div>
-                            <div class="td-right">Off-Plan</div>
-                        </td>
-                        <td style="border-radius: 0 0 8px 0;">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        
-        <div class="info-full">
-            <h2>Validated Information</h2>
-            <div class="info">
-                <table>
-                    <tr>
-                        <td style="border-radius: 8px 0 0 0;">
-                            <div class="td-left">Developer</div>
-                            <div class="td-right">ABCD company, India</div>
-                        </td>
-                        <td style="border-radius: 0 8px 0 0;">
-                            <div class="td-left">Usage</div>
-                            <div class="td-right">Other</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="td-left">Ownership</div>
-                            <div class="td-right">Freehold</div>
-                        </td>
-                        <td>
-                            <div class="td-left">Balcony Size</div>
-                            <div class="td-right">160 sqft </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border-radius: 0 0 0 8px;">
-                            <div class="td-left">Built-up Area</div>
-                            <div class="td-right">1000 sqft</div>
-                        </td>
-                        <td style="border-radius: 0 0 8px 0;">
-                            <div class="td-left">Parking Availability</div>
-                            <div class="td-right">Yes</div>
-                        </td>
-                    </tr>
-                </table>
+            <div class="button-div">
+                <button><i class="mdi mdi-heart-outline" style="margin-right: 8px;"></i>Save</button>
+                <button><i class="mdi mdi-share-variant-outline" style="margin-right: 8px;"></i>Share</button>
             </div>
         </div>
 
-        <div class="info-full">
-            <h2>Building Information</h2>
-            <div class="info">
-                <table>
-                    <tr>
-                        <td style="border-radius: 8px 0 0 0;">
-                            <div class="td-left">Building Name</div>
-                            <div class="td-right">Gopal Villa</div>
-                        </td>
-                        <td style="border-radius: 0 8px 0 0;">
-                            <div class="td-left">Total Parking Space</div>
-                            <div class="td-right">300</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="td-left">Total Floors</div>
-                            <div class="td-right">15</div>
-                        </td>
-                        <td>
-                            <div class="td-left">Total Building Area</div>
-                            <div class="td-right">805,020 sqft</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="td-left">Retail Centres</div>
-                            <div class="td-right">6</div>
-                        </td>
-                        <td>
-                            <div class="td-left">Elevators</div>
-                            <div class="td-right">4</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border-radius: 0 0 0 8px;">
-                            <div class="td-left">Swimming Pools</div>
-                            <div class="td-right">1</div>
-                        </td>
-                        <td style="border-radius: 0 0 8px 0;">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
 
-        <div class="amenities-main">
-            <h2>Features / Amenities</h2>
-            <div class="amen">
-                <div class="amen-single">
-                    <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                    <div>Balcony or Terrace</div>
-                </div>
-                <div class="amen-single">
-                    <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                    <div>Balcony or Terrace</div>
-                </div>
-                <div class="amen-single">
-                    <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                    <div>Balcony or Terrace</div>
-                </div>
-                <div class="amen-single">
-                    <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                    <div>Balcony or Terrace</div>
-                </div>
-                <div class="amen-single">
-                    <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                    <div>Balcony or Terrace</div>
-                </div>
-                <div class="amen-single">
-                    <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                    <div>Balcony or Terrace</div>
-                </div>
+        <div class="img-section">
+            <div class="img-section-big">
+                <img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt="">
             </div>
-            <div class="amen-more">
-                <a href="">Show more Amenities<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
-            </div>
-        </div>
 
-        <div class="floor-main">
-            <h3>Floor Plans</h3>
-            <div class="floor-btn">
-                <button class="active">3D Live</button>
-                <button>3D Image</button>
-                <button>2D Image</button>
-            </div>
-            <div class="floor">
-                <div class="floor-small">
-                    <div><img src="images/floor2.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div><img src="images/floor3.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div><img src="images/floor4.png" style="width: 100%; height: 100%;" alt=""></div>
-                    <div><img src="images/floor5.png" style="width: 100%; height: 100%;" alt=""></div>
+            <div class="img-section-small">
+                <div class="img-section-small-left">
+                    <div><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt=""></div>
                 </div>
-                <div class="floor-big">
-                    <img src="images/floor1.jpg" alt="">
+                <div class="img-section-small-right">
+                    <div><img src="images/detail4.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="img-section-btn-div">
+                        <img src="images/detail5.jpg" style="width: 100%; height: 100%;" alt="">
+                        <div class="transparent-back"></div>
+                        <button class="transparent-back-btn" onclick="openPopupImg()">Show All</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="content-right">
-        
-        <div class="map">
-            <div class="map-back">
-                <img src="images/map-back.jpg" style="width: 100%; height: 100%;" alt="">
+
+
+
+    <div class="content-full">
+        <div class="content-left">
+            <div class="detail slide-up">
+                <div class="price"><span>Base Price: </span><i class="mdi mdi-currency-rupee"
+                        style="margin-right: 4px;"></i>4500000</div>
+
+                <div class="about">
+                    <div><img src="images/bed.png" alt="">1 Bedroom</div>
+                    <div><img src="images/bathtub.png" alt="">2 Bathroom</div>
+                    <div><img src="images/area.png" alt="">1000 sqft</div>
+                </div>
+
+                <a>See more<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
+
+                <div class="feature">
+                    <div>Ground Floor</div>
+                    <span style="width: 2px; height: 16px; background: #D9D9D9;"></span>
+                    <div>Best deal in Lucknow</div>
+                    <span style="width: 2px; height: 16px; background: #D9D9D9;"></span>
+                    <div>Private Garden</div>
+                </div>
+
+                <div class="contact-div">
+                    <button><i class="mdi mdi-email-outline" style="margin-right: 8px;"></i>Email</button>
+                    <button><i class="mdi mdi-phone-outline" style="margin-right: 8px;"></i>Call</button>
+                    <button><i class="mdi mdi-whatsapp" style="margin-right: 8px;"></i>Whatsapp</button>
+                </div>
+
             </div>
-            <div class="map-btn">
-                <button><i class="mdi mdi-map-marker" style="margin-right: 8px;"></i>Explore on Map</button>
+
+            <div class="info-full slide-up">
+                <h2>Property Information</h2>
+                <div class="info">
+                    <table>
+                        <tr>
+                            <td style="border-radius: 8px 0 0 0;">
+                                <div class="td-left">Type</div>
+                                <div class="td-right">Apartment</div>
+                            </td>
+                            <td style="border-radius: 0 8px 0 0;">
+                                <div class="td-left">Furnishing</div>
+                                <div class="td-right">Furnished</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td-left">Purpose</div>
+                                <div class="td-right">For Sale</div>
+                            </td>
+                            <td>
+                                <div class="td-left">Added on</div>
+                                <div class="td-right">13 May 2025 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td-left">Reference no.</div>
+                                <div class="td-right">Lucnow-ba-5436</div>
+                            </td>
+                            <td>
+                                <div class="td-left">Handover Date</div>
+                                <div class="td-right">1st Quarter 2028</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-radius: 0 0 0 8px;">
+                                <div class="td-left">1st Quarter 2028</div>
+                                <div class="td-right">Off-Plan</div>
+                            </td>
+                            <td style="border-radius: 0 0 8px 0;">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="info-full slide-up">
+                <h2>Validated Information</h2>
+                <div class="info">
+                    <table>
+                        <tr>
+                            <td style="border-radius: 8px 0 0 0;">
+                                <div class="td-left">Developer</div>
+                                <div class="td-right">ABCD company, India</div>
+                            </td>
+                            <td style="border-radius: 0 8px 0 0;">
+                                <div class="td-left">Usage</div>
+                                <div class="td-right">Other</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td-left">Ownership</div>
+                                <div class="td-right">Freehold</div>
+                            </td>
+                            <td>
+                                <div class="td-left">Balcony Size</div>
+                                <div class="td-right">160 sqft </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-radius: 0 0 0 8px;">
+                                <div class="td-left">Built-up Area</div>
+                                <div class="td-right">1000 sqft</div>
+                            </td>
+                            <td style="border-radius: 0 0 8px 0;">
+                                <div class="td-left">Parking Availability</div>
+                                <div class="td-right">Yes</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="info-full slide-up">
+                <h2>Building Information</h2>
+                <div class="info">
+                    <table>
+                        <tr>
+                            <td style="border-radius: 8px 0 0 0;">
+                                <div class="td-left">Building Name</div>
+                                <div class="td-right">Gopal Villa</div>
+                            </td>
+                            <td style="border-radius: 0 8px 0 0;">
+                                <div class="td-left">Total Parking Space</div>
+                                <div class="td-right">300</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td-left">Total Floors</div>
+                                <div class="td-right">15</div>
+                            </td>
+                            <td>
+                                <div class="td-left">Total Building Area</div>
+                                <div class="td-right">805,020 sqft</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="td-left">Retail Centres</div>
+                                <div class="td-right">6</div>
+                            </td>
+                            <td>
+                                <div class="td-left">Elevators</div>
+                                <div class="td-right">4</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-radius: 0 0 0 8px;">
+                                <div class="td-left">Swimming Pools</div>
+                                <div class="td-right">1</div>
+                            </td>
+                            <td style="border-radius: 0 0 8px 0;">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="amenities-main slide-up">
+                <h2>Features / Amenities</h2>
+                <div class="amen">
+                    <div class="amen-single">
+                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                        <div>Balcony or Terrace</div>
+                    </div>
+                    <div class="amen-single">
+                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                        <div>Balcony or Terrace</div>
+                    </div>
+                    <div class="amen-single">
+                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                        <div>Balcony or Terrace</div>
+                    </div>
+                    <div class="amen-single">
+                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                        <div>Balcony or Terrace</div>
+                    </div>
+                    <div class="amen-single">
+                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                        <div>Balcony or Terrace</div>
+                    </div>
+                    <div class="amen-single">
+                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                        <div>Balcony or Terrace</div>
+                    </div>
+                </div>
+                <div class="amen-more">
+                    <a onclick="openPopupAmenities()">Show more Amenities<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
+                </div>
+            </div>
+
+            <div class="floor-main slide-up">
+                <h3>Floor Plans</h3>
+                <div class="floor-btn">
+                    <button class="active" data-type="live">3D Live</button>
+                    <button data-type="image3d">3D Image</button>
+                    <button data-type="image2d">2D Image</button>
+                </div>
+                <div class="floor">
+                    <div class="floor-small" id="floor-thumbs">
+                        <div><img src="images/floor2.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                        <div><img src="images/floor3.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                        <div><img src="images/floor4.png" style="width: 100%; height: 100%;" alt=""></div>
+                        <div><img src="images/floor5.png" style="width: 100%; height: 100%;" alt=""></div>
+                    </div>
+                    <div class="floor-big" id="floor-zoom-container">
+                        <img id="main-floor-image" src="images/floor1.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="alert">
-            <p>Be the first to hear about new properties</p>
-            <button><i class="mdi mdi-bell-ring-outline" style="margin-right: 8px;"></i>Alert for New Properties</button>
-        </div>
 
-        <div class="right-extra">
-            <h6>Recommended searches</h6>
-            <ol type="1">
-                <li>Bedroom apartment for sale in Lucknow</li>
-                <li>Bedroom apartment for sale in Lucknow</li>
-                <li>Bedroom apartment for sale in Lucknow</li>
-                <li>Bedroom apartment for sale in Lucknow</li>
-            </ol>
-            <a href="">View More<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
-        </div>
-        
-        <div class="right-extra">
-            <h6>Other Locations</h6>
-            <ol type="1">
-                <li>Jaipur</li>
-                <li>Delhi</li>
-                <li>Goa</li>
-                <li>Mohali</li>
-                <li>Mumbai</li>
-                <li>Agra</li>
-                <li>Gurugram</li>
-            </ol>
-            <a href="">View More<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
-        </div>
-        
-        <div class="right-extra">
-            <h6>Invest in Off Plan</h6>
-            <ol type="1">
-                <li>Off plan apartment in Lucknow</li>
-                <li>Off plan properties in Lucknow</li>
-                <li>New project in Lucknow</li>
-            </ol>
-        </div>
-        
-        <div class="right-extra">
-            <h6>Useful Links</h6>
-            <ol type="1">
-                <li>Apartment for Rent in Lucknow</li>
-            </ol>
-        </div>
+        <div class="content-right">
 
+            <div class="map slide-up">
+                <div class="map-back">
+                    <img src="images/map-back.jpg" style="width: 100%; height: 100%;" alt="">
+                </div>
+                <div class="map-btn">
+
+                    <div class="buttons">
+                        <button class="blob-btn">
+                            <i class="mdi mdi-map-marker" style="margin-right: 8px;"></i>
+                            Explore on Map
+                            <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                            </span>
+                        </button>
+                        <br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none;">
+                            <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix"
+                                values="1 0 0 0 0  
+                                        0 1 0 0 0  
+                                        0 0 1 0 0  
+                                        0 0 0 21 -7" result="goo"></feColorMatrix>
+                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                            </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="alert slide-up">
+                <p>Be the first to hear about new properties</p>
+                <button><i class="mdi mdi-bell-ring-outline" style="margin-right: 8px;"></i>Alert for New
+                    Properties</button>
+            </div>
+
+            <div class="right-extra slide-up">
+                <h6>Recommended searches</h6>
+                <ol type="1">
+                    <li>Bedroom apartment for sale in Lucknow</li>
+                    <li>Bedroom apartment for sale in Lucknow</li>
+                    <li>Bedroom apartment for sale in Lucknow</li>
+                    <li>Bedroom apartment for sale in Lucknow</li>
+                </ol>
+                <a href="">View More<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
+            </div>
+
+            <div class="right-extra slide-up">
+                <h6>Other Locations</h6>
+                <ol type="1">
+                    <li>Jaipur</li>
+                    <li>Delhi</li>
+                    <li>Goa</li>
+                    <li>Mohali</li>
+                    <li>Mumbai</li>
+                    <li>Agra</li>
+                    <li>Gurugram</li>
+                </ol>
+                <a href="">View More<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
+            </div>
+
+            <div class="right-extra slide-up">
+                <h6>Invest in Off Plan</h6>
+                <ol type="1">
+                    <li>Off plan apartment in Lucknow</li>
+                    <li>Off plan properties in Lucknow</li>
+                    <li>New project in Lucknow</li>
+                </ol>
+            </div>
+
+            <div class="right-extra slide-up">
+                <h6>Useful Links</h6>
+                <ol type="1">
+                    <li>Apartment for Rent in Lucknow</li>
+                </ol>
+            </div>
+
+        </div>
     </div>
-</div>
 
 
 
 
 
-<div class="Recommended">
-            <h3>Recommended for you</h3>
-            <div class="city-content" data-city="Lucknow" style="margin-top: 30px; display: flex; justify-content: space-between;">
-            <a href="propertyDetail.html" class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer; text-decoration: none; color: #000;">
+    <div class="Recommended slide-up">
+        <h3>Recommended for you</h3>
+        <div class="city-content" data-city="Lucknow"
+            style="margin-top: 30px; display: flex; justify-content: space-between;">
+            <a href="propertyDetail.html" class="product-card"
+                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer; text-decoration: none; color: #000;">
                 <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -408,10 +444,13 @@
                     <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
                     <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
                 </div>
-                <div class="product-prop" style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                <div class="product-prop"
+                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div class="product-price-main"
+                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
                     </div>
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
@@ -419,9 +458,13 @@
                         <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn"
+                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+                        class="nav-icon mdi mdi-chevron-right"></i></button>
             </a>
-            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
+            <div class="product-card"
+                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
                 <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -429,10 +472,13 @@
                     <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
                     <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
                 </div>
-                <div class="product-prop" style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                <div class="product-prop"
+                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div class="product-price-main"
+                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
                     </div>
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
@@ -440,9 +486,13 @@
                         <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn"
+                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+                        class="nav-icon mdi mdi-chevron-right"></i></button>
             </div>
-            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
+            <div class="product-card"
+                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
                 <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -450,10 +500,13 @@
                     <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
                     <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
                 </div>
-                <div class="product-prop" style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                <div class="product-prop"
+                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div class="product-price-main"
+                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
                     </div>
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
@@ -461,9 +514,13 @@
                         <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn"
+                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+                        class="nav-icon mdi mdi-chevron-right"></i></button>
             </div>
-            <div class="product-card" style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
+            <div class="product-card"
+                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
                 <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
                 <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
                 <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
@@ -471,10 +528,13 @@
                     <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
                     <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
                 </div>
-                <div class="product-prop" style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+                <div class="product-prop"
+                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
+                    <div class="product-price-main"
+                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
                         <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;" class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
+                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
                     </div>
                     <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
                     <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
@@ -482,7 +542,10 @@
                         <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
                     </div>
                 </div>
-                <button class="product-card-btn" style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View Details<i style="font-size: 16px; color: #fff; padding-left: 5px;" class="nav-icon mdi mdi-chevron-right"></i></button>
+                <button class="product-card-btn"
+                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+                        class="nav-icon mdi mdi-chevron-right"></i></button>
             </div>
         </div>
 
@@ -492,61 +555,465 @@
 
 
 
-        <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-logo-contact">
-      <a href="index.html"><img src="images/logo.png" alt="" class="footer-logo"></a>
-      <div class="footer-contact">
-        <div>
-          53 abcd franchise street,<br>
-          gurugram, 785645<br>
-          fabrico@website.com<br>
-          123-456-7890
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo-contact">
+                <a href="index.html"><img src="images/logo.png" alt="" class="footer-logo"></a>
+                <div class="footer-contact">
+                    <div>
+                        53 abcd franchise street,<br>
+                        gurugram, 785645<br>
+                        fabrico@website.com<br>
+                        123-456-7890
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="#"><i class="mdi mdi-whatsapp"></i></a>
+                        <a href="#"><i class="mdi mdi-facebook"></i></a>
+                        <a href="#"><i class="mdi mdi-instagram"></i></a>
+                        <a href="#"><img src="images/twitter-white.png" width="18" height="18" alt="twitter_logo"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h6 class="footer-heading">Services</h6>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Listing</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer-heading">Features</h6>
+                    <ul>
+                        <li><a href="#">Floor Plans</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Market Intelligence</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="footer-social-icons">
-          <a href="#"><i class="mdi mdi-whatsapp"></i></a>
-          <a href="#"><i class="mdi mdi-facebook"></i></a>
-          <a href="#"><i class="mdi mdi-instagram"></i></a>
-          <a href="#"><img src="images/twitter-black.png" width="18" height="18" alt="twitter_logo"></a>
+
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                <i class="mdi mdi-copyright"></i>2025 Fabrico Cleaning Solution Private Limited
+            </div>
+            <div class="footer-apps">
+                <a href="#"><img src="images/appstore.png" alt="App Store"></a>
+                <a href="#"><img src="images/googleplay.png" alt="Google Play"></a>
+            </div>
         </div>
-      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="popup" class="popup-overlay" onclick="outsideClick(event)">
+        <div class="popup-box">
+
+            <div class="popup-head">
+                <h2>Gopal Villa Images</h2>
+                <button onclick="closePopupImg()"><i class="mdi mdi-close" style="cursor: pointer;"></i></button>
+            </div>
+
+            <div class="popup-mid">
+                <div class="popup-img-full" id="imgFull">
+                    <div class="popup-img"><img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail4.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail5.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                </div>
+                <div class="popup-scroll" id="scrollBar">
+                    <div class="scroll-thumb" id="scrollThumb"></div>
+                </div>
+            </div>
+
+            <div class="popup-foot">
+                <div class="contact-div">
+                    <button><i class="mdi mdi-email-outline" style="margin-right: 8px;"></i><span class="hideOn500">Email</span></button>
+                    <button><i class="mdi mdi-phone-outline" style="margin-right: 8px;"></i><span class="hideOn500">Call</span></button>
+                    <button><i class="mdi mdi-whatsapp" style="margin-right: 8px;"></i><span class="hideOn500">Whatsappspan</span></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="amenities" class="popup-overlay" onclick="outsideClickAmen(event)">
+        <div class="popup-amen-box">
+
+            <div class="popup-head">
+                <h2>Gopal Villa Images</h2>
+                <button onclick="closePopupAmenities()"><i class="mdi mdi-close" style="cursor: pointer;"></i></button>
+            </div>
+
+            <div class="popup-mid">
+                <div class="amen-popup-full" id="amenFull">
+                    <div class="amen-popup">
+                        <h2>BUILDING</h2>
+                        <div class="amen-popup-inner">
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="amen-popup">
+                        <h2>BUILDING</h2>
+                        <div class="amen-popup-inner">
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="amen-popup">
+                        <h2>BUILDING</h2>
+                        <div class="amen-popup-inner" id="amenFull">
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                            <div class="amen-popup-single">
+                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div>Balcony or Terrace</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-scroll" id="amenScrollBar">
+                    <div class="scroll-thumb" id="amenScrollThumb"></div>
+                </div>
+            </div>
+            
+
+            <div class="popup-foot">
+                <div class="contact-div">
+                    <button><i class="mdi mdi-email-outline" style="margin-right: 8px;"></i><span class="hideOn500">Email</span></button>
+                    <button><i class="mdi mdi-phone-outline" style="margin-right: 8px;"></i><span class="hideOn500">Call</span></button>
+                    <button><i class="mdi mdi-whatsapp" style="margin-right: 8px;"></i><span class="hideOn500">Whatsappspan</span></button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <div class="footer-links">
-      <div>
-        <h6 class="footer-heading">Services</h6>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Listing</a></li>
-          <li><a href="#">Our Blog</a></li>
-          <li><a href="#">Terms & Condition</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="footer-heading">Features</h6>
-        <ul>
-          <li><a href="#">Floor Plans</a></li>
-          <li><a href="#">Guides</a></li>
-          <li><a href="#">Market Intelligence</a></li>
-          <li><a href="#">Events</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="footer-copy">
-      <i class="mdi mdi-copyright"></i>2025 Fabrico Cleaning Solution Private Limited
-    </div>
-    <div class="footer-apps">
-      <a href="#"><img src="images/appstore.png" alt="App Store"></a>
-      <a href="#"><img src="images/googleplay.png" alt="Google Play"></a>
-    </div>
-  </div>
-</footer>
+
+
+
+
 
 
 
 
 </body>
+
+
+
+
+<script>
+    
+// slide up animation
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".slide-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, {
+    threshold: 0
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+
+
+
+
+// popup for image
+function openPopupImg() {
+  document.getElementById("popup").style.display = "flex";
+}
+
+function closePopupImg() {
+  document.getElementById("popup").style.display = "none";
+}
+
+function outsideClick(event) {
+  const popupBox = document.querySelector('.popup-box');
+  if (!popupBox.contains(event.target)) {
+    closePopupImg();
+  }
+}
+
+
+
+// popup for amenities
+function openPopupAmenities() {
+  document.getElementById("amenities").style.display = "flex";
+}
+
+function closePopupAmenities() {
+  document.getElementById("amenities").style.display = "none";
+}
+
+function outsideClickAmen(event) {
+  const popupBox = document.querySelector('.popup-amen-box');
+  if (!popupBox.contains(event.target)) {
+    closePopupAmenities();
+  }
+}
+
+
+
+
+
+// scroller for popup
+function setupCustomScrollbar(containerId, barId, thumbId) {
+  const container = document.getElementById(containerId);
+  const scrollBar = document.getElementById(barId);
+  const scrollThumb = document.getElementById(thumbId);
+
+  function updateThumbHeight() {
+    const visibleRatio = container.clientHeight / container.scrollHeight;
+    const thumbHeight = Math.max(visibleRatio * scrollBar.clientHeight, 30);
+    scrollThumb.style.height = thumbHeight + 'px';
+  }
+
+  function updateThumbPosition() {
+    const scrollRatio = container.scrollTop / (container.scrollHeight - container.clientHeight);
+    const maxTop = scrollBar.clientHeight - scrollThumb.clientHeight;
+    scrollThumb.style.top = (scrollRatio * maxTop) + 'px';
+  }
+
+  container.addEventListener('scroll', updateThumbPosition);
+
+  let isDragging = false;
+  let startY, startTop;
+
+  scrollThumb.addEventListener('mousedown', e => {
+    isDragging = true;
+    startY = e.clientY;
+    startTop = parseFloat(scrollThumb.style.top) || 0;
+    document.body.style.userSelect = 'none';
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+    document.body.style.userSelect = '';
+  });
+
+  document.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+    const deltaY = e.clientY - startY;
+    const maxTop = scrollBar.clientHeight - scrollThumb.clientHeight;
+    let newTop = startTop + deltaY;
+    newTop = Math.max(0, Math.min(newTop, maxTop));
+    scrollThumb.style.top = newTop + 'px';
+
+    const scrollRatio = newTop / maxTop;
+    container.scrollTop = scrollRatio * (container.scrollHeight - container.clientHeight);
+  });
+
+  scrollBar.addEventListener('click', (e) => {
+    if (e.target === scrollThumb) return;
+    const rect = scrollBar.getBoundingClientRect();
+    const clickY = e.clientY - rect.top;
+    const thumbHeight = scrollThumb.clientHeight;
+    const maxTop = scrollBar.clientHeight - thumbHeight;
+    let newTop = clickY - thumbHeight / 2;
+    newTop = Math.max(0, Math.min(newTop, maxTop));
+    scrollThumb.style.top = newTop + 'px';
+
+    const scrollRatio = newTop / maxTop;
+    container.scrollTop = scrollRatio * (container.scrollHeight - container.clientHeight);
+  });
+
+  window.addEventListener('resize', () => {
+    updateThumbHeight();
+    updateThumbPosition();
+  });
+
+  updateThumbHeight();
+  updateThumbPosition();
+}
+
+// Initialize both scroll areas
+setupCustomScrollbar('imgFull', 'scrollBar', 'scrollThumb');
+setupCustomScrollbar('amenFull', 'amenScrollBar', 'amenScrollThumb');
+
+
+
+
+
+// floor-plan
+const floorData = {
+  live: [
+    'images/floor1.jpg',
+    'images/floor2.jpg'
+  ],
+  image3d: [
+    'images/floor5.png',
+    'images/floor4.png',
+    'images/floor3.jpg'
+  ],
+  image2d: [
+    'images/floor1.jpg',
+    'images/floor2.jpg',
+    'images/floor3.jpg',
+    'images/floor4.png'
+  ]
+};
+
+const buttons = document.querySelectorAll('.floor-btn button');
+const mainImage = document.getElementById('main-floor-image');
+const thumbsContainer = document.getElementById('floor-thumbs');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const type = button.getAttribute('data-type');
+    updateFloorImages(type);
+  });
+});
+
+function updateFloorImages(type) {
+  const images = floorData[type];
+
+  mainImage.src = images[0];
+
+  thumbsContainer.innerHTML = '';
+
+  images.forEach((imgSrc, index) => {
+    const thumbDiv = document.createElement('div');
+    thumbDiv.innerHTML = `<img src="${imgSrc}" style="width: 100%; height: 100%;" alt="">`;
+    thumbDiv.style.border = '1px solid #5DBAA6';
+    thumbDiv.style.borderRadius = '4px';
+    thumbDiv.style.cursor = 'pointer';
+
+    thumbDiv.addEventListener('click', () => {
+      mainImage.src = imgSrc;
+    });
+
+    thumbsContainer.appendChild(thumbDiv);
+  });
+}
+
+updateFloorImages('live');
+
+
+
+
+// zoom 
+const zoomContainer = document.getElementById('floor-zoom-container');
+  const zoomImage = document.getElementById('main-floor-image');
+
+  zoomContainer.addEventListener('mousemove', function(e) {
+    const { left, top, width, height } = zoomContainer.getBoundingClientRect();
+    const x = ((e.clientX - left) / width) * 100;
+    const y = ((e.clientY - top) / height) * 100;
+
+    zoomImage.style.transform = 'scale(2)';
+    zoomImage.style.transformOrigin = `${x}% ${y}%`;
+  });
+
+  zoomContainer.addEventListener('mouseleave', function() {
+    zoomImage.style.transform = 'scale(1)';
+    zoomImage.style.transformOrigin = 'center center';
+  });
+
+
+
+</script>
