@@ -7,6 +7,12 @@
   <title>Property</title>
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+
 </head>
 
 <body>
@@ -70,29 +76,20 @@
   </header>
 
 
-
   <div class="banner">
 
-    <div class="banner-left-content">
-      <div class="banner-left-back">
-      </div>
+    <div class="banner-back"></div>
 
-      <div class="banner-left-main">
-        <h1 class="banner-left-main-heading">Where Dreams Meet Doors</h1>
-        <p class="banner-left-main-p">Browse thousands of verified listings across top locations</p>
-      </div>
+    <div class="banner-top">
+      <h1 class="banner-top-heading">Where Dreams Meet Doors</h1>
+        <p class="banner-top-p">Browse thousands of verified listings across top locations</p>
     </div>
 
+    <div class="banner-bottom">
+      
+      <div class="banner-bottom-back">
 
-    <div class="banner-right-content">
-      <div class="banner-right-back">
-      </div>
-
-      <div class="banner-right-main" `>
-
-        <div class="banner-right-form-main">
-
-          <div class="banner-right-tabs">
+          <div class="banner-tabs1">
             <div class="prop-tabs">
               <input type="radio" name="prop-tab" id="prop-tab1" checked>
               <label for="prop-tab1" class="prop-tab">Properties</label>
@@ -102,86 +99,94 @@
 
             </div>
           </div>
-          
-          <div class="banner-right-tabs">
-            <div class="all-tabs">
-              <input type="radio" name="all-tab" id="all-tab1" checked>
-              <label for="all-tab1" class="all-tab">All</label>
 
-              <input type="radio" name="all-tab" id="all-tab2">
-              <label for="all-tab2" class="all-tab">Off Plan</label>
+          <div class="banner-form-inner">
+        
+            <div class="form-top">
+              <div class="banner-tabs2">
+                <div class="all-tabs">
+                  <input type="radio" name="all-tab" id="all-tab1" checked>
+                  <label for="all-tab1" class="all-tab">All</label>
 
-              <input type="radio" name="all-tab" id="all-tab3">
-              <label for="all-tab3" class="all-tab">Ready</label>
+                  <input type="radio" name="all-tab" id="all-tab2">
+                  <label for="all-tab2" class="all-tab">Off Plan</label>
 
-            </div>
-          </div>
+                  <input type="radio" name="all-tab" id="all-tab3">
+                  <label for="all-tab3" class="all-tab">Ready</label>
 
-          <div class="banner-right-form">
-
-            <div class="banner-form-outer">
-              <i class="banner-form-i mdi mdi-map-marker"></i>
-              <input class="banner-form-input-loction" type="text" placeholder="Enter Location" />
-            </div>
-
-            <div class="banner-form-outer">
-              <i class="banner-form-i mdi mdi-home-city-outline"></i>
-              <div class="custom-dropdown">
-                <div class="custom-select" onclick="toggleDropdown()">Property Type</div>
-                <ul class="custom-options">
-                  <li onclick="selectOption(this)">Residential</li>
-                  <li onclick="selectOption(this)">Commercial</li>
-                  <li onclick="selectOption(this)">Others</li>
-                </ul>
+                </div>
               </div>
+              
+              <div class="form-location">
+                <i class="form-location-i mdi mdi-map-marker"></i>
+                <input class="form-location-input" type="text" placeholder="Enter Location" />
+                <button onclick="window.location.href='/propertyListing.html'" class="showOmMobile"><i class="mdi mdi-magnify"></i></button>
+              </div>
+
+              <button onclick="window.location.href='/propertyListing.html'" class="form-btn">Search</button>
+
             </div>
 
+            <div class="form-bottom">
 
-            <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
-              <div class="banner-form-both-select">
-                  <div class="custom-dropdown1">
-                    <div class="custom-select1" onclick="toggleDropdown1()">Beds & Baths</div>
-                    <ul class="custom-options1">
-                      <li onclick="selectOption1(this)">1 Bed & 1 Bath</li>
-                      <li onclick="selectOption1(this)">2 Bed & 1 Bath</li>
-                      <li onclick="selectOption1(this)">2 Bed & 2 Bath</li>
+               <div class="bottom-type">
+                 <div class="custom-dropdown">
+                  <div class="property-type">
+                    <i class="bottom-type-i mdi mdi-home-city-outline"></i>
+                    <div class="custom-select" onclick="toggleDropdown()">Property Type</div>
+                  </div>
+                    <ul class="custom-options">
+                      <li onclick="selectOption(this)">Residential</li>
+                      <li onclick="selectOption(this)">Commercial</li>
+                      <li onclick="selectOption(this)">Others</li>
                     </ul>
                   </div>
-              </div>
-
-              <div class="banner-form-both-select">
-                <div class="custom-dropdown-price">
-                  <div class="custom-select-price" onclick="toggleDropdownPrice()">Price (&#8377;)</div>
-                  <ul class="custom-options-price">
-                    <li onclick="selectOptionPrice(this)">0 to 50L</li>
-                    <li onclick="selectOptionPrice(this)">50L to 2Cr</li>
-                    <li onclick="selectOptionPrice(this)">2Cr+</li>
-                  </ul>
                 </div>
-              </div>
-            </div>
-            
-            
-            <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
-              <div class="banner-form-both-select">
-                <div class="custom-dropdown-area">
-                  <div class="custom-select-area" onclick="toggleDropdownArea()">Area (sqft)</div>
-                  <ul class="custom-options-area">
-                    <li onclick="selectOptionArea(this)">0 to 1000 sqft</li>
-                    <li onclick="selectOptionArea(this)">1000 to 2000 sqft</li>
-                    <li onclick="selectOptionArea(this)">2000+ sqft</li>
-                  </ul>
-                </div>
-              </div>
 
-              <button class="banner-form-btn">Search</button>
+
+                  <div class="bottom-others">
+                      <div class="custom-dropdown1">
+                        <div class="custom-select1" onclick="toggleDropdown1()">Beds & Baths</div>
+                        <ul class="custom-options1">
+                          <li onclick="selectOption1(this)">1 Bed & 1 Bath</li>
+                          <li onclick="selectOption1(this)">2 Bed & 1 Bath</li>
+                          <li onclick="selectOption1(this)">2 Bed & 2 Bath</li>
+                        </ul>
+                      </div>
+                  </div>
+
+                  <div class="bottom-others">
+                    <div class="custom-dropdown-price">
+                      <div class="custom-select-price" onclick="toggleDropdownPrice()">Price (&#8377;)</div>
+                      <ul class="custom-options-price">
+                        <li onclick="selectOptionPrice(this)">0 to 50L</li>
+                        <li onclick="selectOptionPrice(this)">50L to 2Cr</li>
+                        <li onclick="selectOptionPrice(this)">2Cr+</li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                
+
+                  <div class="bottom-others">
+                    <div class="custom-dropdown-area">
+                      <div class="custom-select-area" onclick="toggleDropdownArea()">Area (sqft)</div>
+                      <ul class="custom-options-area">
+                        <li onclick="selectOptionArea(this)">0 to 1000 sqft</li>
+                        <li onclick="selectOptionArea(this)">1000 to 2000 sqft</li>
+                        <li onclick="selectOptionArea(this)">2000+ sqft</li>
+                      </ul>
+                    </div>
+                  </div>
+ 
             </div>
 
           </div>
 
         </div>
-      </div>
+
     </div>
+
 
   </div>
 
@@ -741,23 +746,41 @@
 
 
 
+
+
+
     <div class="featured-section slide-up">
-      <h2 class="featured-title">Featured Agencies</h2>
-      <div class="carousel-wrapper">
-        <i class="mdi mdi-chevron-left carousel-button" id="scroll-left"></i>
-
-        <div class="carousel" id="carousel">
-          <div class="agency-card" style="background: #d2d2d2;"></div>
-          <div class="agency-card" style="background: #a4a4a4;"></div>
-          <div class="agency-card" style="background: #707070;"></div>
-          <div class="agency-card" style="background: #d2d2d2;"></div>
-          <div class="agency-card" style="background: #a4a4a4;"></div>
-          <div class="agency-card" style="background: #707070;"></div>
-        </div>
-
-        <i class="mdi mdi-chevron-right carousel-button active" id="scroll-right"></i>
-      </div>
+  <h2 class="featured-title">Featured Agencies</h2>
+  <div class="carousel-wrapper">
+    <button class="scroll-btn left" id="scroll-left">&#10094;</button>
+    
+    <div class="carousel" id="carousel">
+      <div class="swiper-slide"><img src="images/agency1.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency2.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency3.webp" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency4.webp" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency5.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency6.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency7.png" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency8.png" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency1.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency2.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency3.webp" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency4.webp" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency5.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency6.jpeg" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency7.png" class="img-fluid" alt=""></div>
+      <div class="swiper-slide"><img src="images/agency8.png" class="img-fluid" alt=""></div>
     </div>
+    
+    <button class="scroll-btn right" id="scroll-right">&#10095;</button>
+  </div>
+</div>
+
+
+
+
+
 
 
   </main>
@@ -1080,6 +1103,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 3000);
     });
   });
+  carousel.addEventListener("scroll", () => {
+  carousel.style.opacity = '0.8';
+  setTimeout(() => carousel.style.opacity = '1', 1500);
+});
 
 
 

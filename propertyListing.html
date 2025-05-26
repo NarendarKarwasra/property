@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property</title>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="extra.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="logo" class="logo" />
+            </a>
+
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-right nav-right-mobile">
+                    <div class="nav-right-section">
+                        <div class="nav-right-icon">
+                            <i class="mdi mdi-heart-outline" style="cursor: pointer;"></i>
+                            <i class="mdi mdi-bookmark-outline" style="cursor: pointer;"></i>
+                        </div>
+                        <button><i class="mdi mdi-account-circle"></i>Log in</button>
+                    </div>
+                </li>
+                <li><a href="#">Floor Plans</a></li>
+                <li>
+                    <a href="#">Guides <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Buying Guide</a>
+                        <a href="#">Renting Guide</a>
+                        <a href="#">Selling Guide</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Market Intelligence <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Reports</a>
+                        <a href="#">Data Insights</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Events <i class="nav-icon mdi mdi-chevron-down"></i></a>
+                    <div class="dropdown">
+                        <a href="#">Upcoming Events</a>
+                        <a href="#">Past Events</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="nav-right nav-right-desktop">
+                <div class="nav-right-icon">
+                    <i class="mdi mdi-heart-outline"></i>
+                    <i class="mdi mdi-bookmark-outline"></i>
+                </div>
+                <button><i class="mdi mdi-account-circle"></i>Log in</button>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="back-links">
+        <button>Home</button>
+        <i class="mdi mdi-chevron-right"></i>
+        <button>Property Listing </button>
+        <i class="mdi mdi-chevron-right"></i>
+        <button style="color: #000;">Property Detail</button>
+    </div>
+
+
+
+
+
+    <div class="search">
+
+        <div class="search-location">
+            <i class="search-location-i mdi mdi-map-marker"></i>
+            <input class="search-location-input" type="text" placeholder="Enter Location" />
+        </div>
+
+        <div class="search-tabs">
+            <div class="all-tabs">
+              <input type="radio" name="all-tab" id="all-tab1" checked>
+              <label for="all-tab1" class="all-tab">All</label>
+
+              <input type="radio" name="all-tab" id="all-tab2">
+              <label for="all-tab2" class="all-tab">Off Plan</label>
+
+              <input type="radio" name="all-tab" id="all-tab3">
+              <label for="all-tab3" class="all-tab">Ready</label>
+
+            </div>
+          </div>
+
+            <div class="search-type">
+                <!-- <i class="search-location-i mdi mdi-home-city-outline"></i> -->
+                <div class="custom-dropdown search-custom-dropdown">
+                    <div class="custom-select" onclick="toggleDropdown()">Property Type</div>
+                    <ul class="custom-options">
+                        <li onclick="selectOption(this)">Residential</li>
+                        <li onclick="selectOption(this)">Commercial</li>
+                        <li onclick="selectOption(this)">Others</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="search-type search-beds">
+                  <div class="custom-dropdown1">
+                    <div class="custom-select1" onclick="toggleDropdown1()">Beds & Baths</div>
+                    <ul class="custom-options1">
+                      <li onclick="selectOption1(this)">1 Bed & 1 Bath</li>
+                      <li onclick="selectOption1(this)">2 Bed & 1 Bath</li>
+                      <li onclick="selectOption1(this)">2 Bed & 2 Bath</li>
+                    </ul>
+                  </div>
+              </div>
+
+
+
+            <div class="search-type more-filter">
+                  <div class="custom-dropdown1">
+                    <div class="custom-select1" onclick="toggleDropdown1()">More Filters</div>
+                    <ul class="custom-options1">
+                      <li onclick="selectOption1(this)">1 Bed & 1 Bath</li>
+                      <li onclick="selectOption1(this)">2 Bed & 1 Bath</li>
+                      <li onclick="selectOption1(this)">2 Bed & 2 Bath</li>
+                    </ul>
+                  </div>
+              </div>
+              
+            </div>
+            
+            
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="banner-right-form">
+  
+              <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
+                
+                <div class="banner-form-both-select">
+                  <div class="custom-dropdown-price">
+                    <div class="custom-select-price" onclick="toggleDropdownPrice()">Price (&#8377;)</div>
+                    <ul class="custom-options-price">
+                      <li onclick="selectOptionPrice(this)">0 to 50L</li>
+                      <li onclick="selectOptionPrice(this)">50L to 2Cr</li>
+                      <li onclick="selectOptionPrice(this)">2Cr+</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
+                <div class="banner-form-both-select">
+                  <div class="custom-dropdown-area">
+                    <div class="custom-select-area" onclick="toggleDropdownArea()">Area (sqft)</div>
+                    <ul class="custom-options-area">
+                      <li onclick="selectOptionArea(this)">0 to 1000 sqft</li>
+                      <li onclick="selectOptionArea(this)">1000 to 2000 sqft</li>
+                      <li onclick="selectOptionArea(this)">2000+ sqft</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <button onclick="window.location.href='/propertyListing.html'" class="banner-form-btn">Search</button>
+              </div>
+  
+            </div> -->
+
+
+
+
+
+</body>
+
+
+
+
+<script>
+    // mobile view
+  function toggleMobileMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+
+
+  
+// banner form show options
+function toggleDropdown() {
+  const optionsList = document.querySelector('.custom-options');
+  optionsList.classList.toggle('show');
+}
+
+function selectOption(el) {
+  const selectBox = document.querySelector('.custom-select');
+  const options = document.querySelectorAll('.custom-options li');
+
+  options.forEach(opt => opt.classList.remove('selected'));
+
+  el.classList.add('selected');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options').classList.remove('show');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options').classList.remove('show');
+  }
+});
+
+
+
+function toggleDropdown1() {
+  const optionsList = document.querySelector('.custom-options1');
+  optionsList.classList.toggle('show1');
+}
+
+function selectOption1(el) {
+  const selectBox = document.querySelector('.custom-select1');
+  const options = document.querySelectorAll('.custom-options1 li');
+
+  options.forEach(opt => opt.classList.remove('selected1'));
+
+  el.classList.add('selected1');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options1').classList.remove('show1');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown1');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options1').classList.remove('show1');
+  }
+});
+
+
+function toggleDropdownPrice() {
+  const optionsList = document.querySelector('.custom-options-price');
+  optionsList.classList.toggle('showPrice');
+}
+
+function selectOptionPrice(el) {
+  const selectBox = document.querySelector('.custom-select-price');
+  const options = document.querySelectorAll('.custom-options-price li');
+
+  options.forEach(opt => opt.classList.remove('selectedPrice'));
+
+  el.classList.add('selectedPrice');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options-price').classList.remove('showPrice');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown-price');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options-price').classList.remove('showPrice');
+  }
+});
+
+
+function toggleDropdownArea() {
+  const optionsList = document.querySelector('.custom-options-area');
+  optionsList.classList.toggle('showArea');
+}
+
+function selectOptionArea(el) {
+  const selectBox = document.querySelector('.custom-select-area');
+  const options = document.querySelectorAll('.custom-options-area li');
+
+  options.forEach(opt => opt.classList.remove('selectedArea'));
+
+  el.classList.add('selectedArea');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options-area').classList.remove('showArea');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown-area');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options-area').classList.remove('showArea');
+  }
+});
+
+
+
+
+// slide up animation
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".slide-up");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, {
+    threshold: 0
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+
+
+
+</script>
