@@ -1031,17 +1031,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const rightBtn = document.querySelector(".scroll-btn.right");
 
   function getScrollStep() {
-  const screenWidth = window.innerWidth;
+    const screenWidth = window.innerWidth;
 
-  if (screenWidth <= 600) {
-    return cardsWrapper.clientWidth;
-  } else if (screenWidth <= 1000) {
-    return cardsWrapper.clientWidth / 2;
-  } else {
-    return cardsWrapper.clientWidth / 3;
+    if (screenWidth <= 600) {
+      return cardsWrapper.clientWidth;
+    } else if (screenWidth <= 1000) {
+      return cardsWrapper.clientWidth / 2;
+    } else {
+      return cardsWrapper.clientWidth / 3;
+    }
   }
-}
 
+  function updateNewsBtnState() {
+    const scrollLeft = cardsWrapper.scrollLeft;
+    const maxScroll = cardsWrapper.scrollWidth - cardsWrapper.clientWidth;
+
+    if (scrollLeft <= 0) {
+      leftBtn.classList.add("disabled");
+      rightBtn.classList.remove("disabled");
+    } else if (scrollLeft >= maxScroll - 1) {
+      rightBtn.classList.add("disabled");
+      leftBtn.classList.remove("disabled");
+    } else {
+      leftBtn.classList.remove("disabled");
+      rightBtn.classList.remove("disabled");
+    }
+  }
 
   leftBtn.addEventListener("click", () => {
     cardsWrapper.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
@@ -1051,6 +1066,12 @@ document.addEventListener("DOMContentLoaded", () => {
     cardsWrapper.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
   });
 
+  cardsWrapper.addEventListener("scroll", updateNewsBtnState);
+
+  // Initial check
+  updateNewsBtnState();
+
+  // Auto scroll
   setInterval(() => {
     const endReached = cardsWrapper.scrollLeft + cardsWrapper.clientWidth >= cardsWrapper.scrollWidth;
     cardsWrapper.scrollTo({
@@ -1059,6 +1080,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, 4000);
 });
+
 
 
 
@@ -1095,21 +1117,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // scroll compony
   document.addEventListener("DOMContentLoaded", () => {
-    const carousel = document.getElementById("carousel");
-    const scrollRight = document.getElementById("scroll-right");
-    const scrollLeft = document.getElementById("scroll-left");
-    const scrollAmount = 270;
+  const carousel = document.getElementById("carousel");
+  const scrollRight = document.getElementById("scroll-right");
+  const scrollLeft = document.getElementById("scroll-left");
+  const scrollAmount = 270;
 
-    scrollRight.addEventListener("click", () => {
-      carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    });
+  const updateButtonState = () => {
+    if (carousel.scrollLeft <= 0) {
+      scrollLeft.classList.add("disabled");
+      scrollRight.classList.remove("disabled");
+    }
+    else if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 1) {
+      scrollRight.classList.add("disabled");
+      scrollLeft.classList.remove("disabled");
+    }
+    else {
+      scrollLeft.classList.remove("disabled");
+      scrollRight.classList.remove("disabled");
+    }
+  };
 
-    scrollLeft.addEventListener("click", () => {
-      carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    });
+  scrollRight.addEventListener("click", () => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
 
-    let autoScroll = setInterval(() => {
+  scrollLeft.addEventListener("click", () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
 
+  let autoScroll = setInterval(() => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+
+    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - scrollAmount) {
+      setTimeout(() => {
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+      }, 1500);
+    }
+  }, 3000);
+
+  carousel.addEventListener("mouseenter", () => clearInterval(autoScroll));
+  carousel.addEventListener("mouseleave", () => {
+    autoScroll = setInterval(() => {
       carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 
       if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - scrollAmount) {
@@ -1118,24 +1166,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1500);
       }
     }, 3000);
-
-    carousel.addEventListener("mouseenter", () => clearInterval(autoScroll));
-    carousel.addEventListener("mouseleave", () => {
-      autoScroll = setInterval(() => {
-        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-
-        if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - scrollAmount) {
-          setTimeout(() => {
-            carousel.scrollTo({ left: 0, behavior: 'smooth' });
-          }, 1500);
-        }
-      }, 3000);
-    });
   });
+
   carousel.addEventListener("scroll", () => {
-  carousel.style.opacity = '0.8';
-  setTimeout(() => carousel.style.opacity = '1', 1500);
+    carousel.style.opacity = '0.8';
+    setTimeout(() => carousel.style.opacity = '1', 1500);
+    updateButtonState();
+  });
+
+  updateButtonState();
 });
+
 
 
 
