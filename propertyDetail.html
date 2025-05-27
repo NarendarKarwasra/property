@@ -7,6 +7,7 @@
     <title>Property</title>
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style123.css" />
 </head>
 
 <body>
@@ -96,21 +97,21 @@
 
 
         <div class="img-section">
-            <div class="img-section-big">
+            <div class="img-section-big" onclick="openPopupImg()">
                 <img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt="">
             </div>
 
             <div class="img-section-small">
-                <div class="img-section-small-left">
+                <!-- <div class="img-section-small-left">
                     <div><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt=""></div>
                     <div><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                </div>
+                </div> -->
                 <div class="img-section-small-right">
-                    <div><img src="images/detail4.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="img-section-btn-div">
+                    <div onclick="openPopupImg()"><img src="images/detail4.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="img-section-btn-div" onclick="openPopupImg()">
                         <img src="images/detail5.jpg" style="width: 100%; height: 100%;" alt="">
                         <div class="transparent-back"></div>
-                        <button class="transparent-back-btn" onclick="openPopupImg()">Show All</button>
+                        <button class="transparent-back-btn">Show All</button>
                     </div>
                 </div>
             </div>
@@ -151,166 +152,202 @@
 
             </div>
 
-            <div class="info-full slide-up">
-                <h2>Property Information</h2>
-                <div class="info">
-                    <table>
-                        <tr>
-                            <td style="border-radius: 8px 0 0 0;">
-                                <div class="td-left">Type</div>
-                                <div class="td-right">Apartment</div>
-                            </td>
-                            <td style="border-radius: 0 8px 0 0;">
-                                <div class="td-left">Furnishing</div>
-                                <div class="td-right">Furnished</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="td-left">Purpose</div>
-                                <div class="td-right">For Sale</div>
-                            </td>
-                            <td>
-                                <div class="td-left">Added on</div>
-                                <div class="td-right">13 May 2025 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="td-left">Reference no.</div>
-                                <div class="td-right">Lucnow-ba-5436</div>
-                            </td>
-                            <td>
-                                <div class="td-left">Handover Date</div>
-                                <div class="td-right">1st Quarter 2028</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border-radius: 0 0 0 8px;">
-                                <div class="td-left">1st Quarter 2028</div>
-                                <div class="td-right">Off-Plan</div>
-                            </td>
-                            <td style="border-radius: 0 0 8px 0;">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
 
-            <div class="info-full slide-up">
-                <h2>Validated Information</h2>
-                <div class="info">
-                    <table>
-                        <tr>
-                            <td style="border-radius: 8px 0 0 0;">
-                                <div class="td-left">Developer</div>
-                                <div class="td-right">ABCD company, India</div>
-                            </td>
-                            <td style="border-radius: 0 8px 0 0;">
-                                <div class="td-left">Usage</div>
-                                <div class="td-right">Other</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="td-left">Ownership</div>
-                                <div class="td-right">Freehold</div>
-                            </td>
-                            <td>
-                                <div class="td-left">Balcony Size</div>
-                                <div class="td-right">160 sqft </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border-radius: 0 0 0 8px;">
-                                <div class="td-left">Built-up Area</div>
-                                <div class="td-right">1000 sqft</div>
-                            </td>
-                            <td style="border-radius: 0 0 8px 0;">
-                                <div class="td-left">Parking Availability</div>
-                                <div class="td-right">Yes</div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
 
-            <div class="info-full slide-up">
-                <h2>Building Information</h2>
-                <div class="info">
-                    <table>
-                        <tr>
-                            <td style="border-radius: 8px 0 0 0;">
-                                <div class="td-left">Building Name</div>
-                                <div class="td-right">Gopal Villa</div>
-                            </td>
-                            <td style="border-radius: 0 8px 0 0;">
-                                <div class="td-left">Total Parking Space</div>
-                                <div class="td-right">300</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="td-left">Total Floors</div>
-                                <div class="td-right">15</div>
-                            </td>
-                            <td>
-                                <div class="td-left">Total Building Area</div>
-                                <div class="td-right">805,020 sqft</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="td-left">Retail Centres</div>
-                                <div class="td-right">6</div>
-                            </td>
-                            <td>
-                                <div class="td-left">Elevators</div>
-                                <div class="td-right">4</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border-radius: 0 0 0 8px;">
-                                <div class="td-left">Swimming Pools</div>
-                                <div class="td-right">1</div>
-                            </td>
-                            <td style="border-radius: 0 0 8px 0;">
-                            </td>
-                        </tr>
-                    </table>
+
+
+
+
+            <h1 class="info-main-heading slide-up">Information</h1>
+
+            <div class="info-div slide-up">
+                <div class="info-btn-full">
+                    <button class="tab-btn active tab-btn1" data-tab="property">Property</button>
+                    <button class="tab-btn tab-btn2" data-tab="validate">Validate</button>
+                    <button class="tab-btn  tab-btn3" data-tab="building">Building</button>
                 </div>
+
+                <div class="info-full-content">
+                    <div class="info-full tab-content active" data-tab="property">
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/prop1.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Property Type</h6>
+                                <h4>Flats / Apartments</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/prop2.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Furnishing</h6>
+                                <h4>Furnished</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/prop3.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Purpose</h6>
+                                <h4>For Sale</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/prop4.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Added on</h6>
+                                <h4>13 May 2025</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/prop5.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Reference no.</h6>
+                                <h4>Lucnow-ba-5436</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/prop6.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Handover Date</h6>
+                                <h4>1st Quarter 2028</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/prop7.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Completion</h6>
+                                <h4>Off-plan</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="info-full tab-content" data-tab="validate">
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/val1.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Developer</h6>
+                                <h4>ABCD company, India</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/val2.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Usage</h6>
+                                <h4>Other</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/val3.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Ownership</h6>
+                                <h4>Freehold</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/val4.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Balcony Size</h6>
+                                <h4>160 sqft</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/val5.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Built-up Area</h6>
+                                <h4>1000 sqft</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/val6.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Parking Availability</h6>
+                                <h4>Yes</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-full tab-content" data-tab="building">
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/building1.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Building Name</h6>
+                                <h4>Gopal Villa</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/building2.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Total Parking Space</h6>
+                                <h4>300</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/building3.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Total Floors</h6>
+                                <h4>15</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/building4.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Total Building Area</h6>
+                                <h4>805,020 sqft</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/building5.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Retail Centres</h6>
+                                <h4>6</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/building6.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Elevators</h6>
+                                <h4>4</h4>
+                            </div>
+                        </div>
+                        <div class="info-single">
+                            <div class="info-single-img"><img src="images/info/building7.png" alt=""></div>
+                            <div class="info-single-headings">
+                                <h6>Swimming Pools</h6>
+                                <h4>2</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="amenities-main slide-up">
                 <h2>Features / Amenities</h2>
                 <div class="amen">
                     <div class="amen-single">
-                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                        <div class="amen-single-img"><img src="images/info/prop2.png" alt=""></div>
+                        <div>Furnished</div>
+                    </div>
+                    <div class="amen-single">
+                        <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                         <div>Balcony or Terrace</div>
                     </div>
                     <div class="amen-single">
-                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                        <div>Balcony or Terrace</div>
+                        <div class="amen-single-img"><img src="images/info/val6.png" alt=""></div>
+                        <div>Parking</div>
                     </div>
                     <div class="amen-single">
-                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                        <div>Balcony or Terrace</div>
+                        <div class="amen-single-img"><img src="images/info/building7.png" alt=""></div>
+                        <div>Swimming Pool</div>
                     </div>
                     <div class="amen-single">
-                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                        <div>Balcony or Terrace</div>
+                        <div class="amen-single-img"><img src="images/info/building6.png" alt=""></div>
+                        <div>Elevators</div>
                     </div>
-                    <div class="amen-single">
-                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                        <div>Balcony or Terrace</div>
+                    <div onclick="openPopupAmenities()" class="amen-single amen-more">
+                        <a>Show All Amenities</a>
                     </div>
-                    <div class="amen-single">
-                        <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
-                        <div>Balcony or Terrace</div>
-                    </div>
-                </div>
-                <div class="amen-more">
-                    <a onclick="openPopupAmenities()">Show more Amenities<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
                 </div>
             </div>
 
@@ -323,10 +360,10 @@
                 </div>
                 <div class="floor">
                     <div class="floor-small" id="floor-thumbs">
+                        <div><img src="images/floor1.jpg" style="width: 100%; height: 100%;" alt=""></div>
                         <div><img src="images/floor2.jpg" style="width: 100%; height: 100%;" alt=""></div>
                         <div><img src="images/floor3.jpg" style="width: 100%; height: 100%;" alt=""></div>
                         <div><img src="images/floor4.png" style="width: 100%; height: 100%;" alt=""></div>
-                        <div><img src="images/floor5.png" style="width: 100%; height: 100%;" alt=""></div>
                     </div>
                     <div class="floor-big" id="floor-zoom-container">
                         <img id="main-floor-image" src="images/floor1.jpg" alt="">
@@ -433,120 +470,128 @@
     <div class="Recommended slide-up">
         <h3>Recommended for you</h3>
         <div class="city-content" data-city="Lucknow"
-            style="margin-top: 30px; display: flex; justify-content: space-between;">
-            <a href="propertyDetail.html" class="product-card"
-                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer; text-decoration: none; color: #000;">
-                <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
-                <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
-                <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
-                <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
-                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
-                    <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
-                </div>
-                <div class="product-prop"
-                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main"
-                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
-                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
-                    </div>
-                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
-                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
-                    </div>
-                </div>
-                <button class="product-card-btn"
-                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
-                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
-                        class="nav-icon mdi mdi-chevron-right"></i></button>
-            </a>
-            <div class="product-card"
-                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
-                <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
-                <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
-                <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
-                <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
-                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
-                    <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
-                </div>
-                <div class="product-prop"
-                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main"
-                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
-                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
-                    </div>
-                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
-                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
-                    </div>
-                </div>
-                <button class="product-card-btn"
-                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
-                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
-                        class="nav-icon mdi mdi-chevron-right"></i></button>
+        style="margin-top: 30px; display: flex; justify-content: space-between;">
+        <a href="propertyDetail.html" class="product-card"
+          style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer; text-decoration: none; color: #000;">
+          <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
+          <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
+          <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
+          <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
+            <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+            <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
+          </div>
+          <div class="product-prop"
+            style="background: #EFEFEF; padding: 10px 5px; display: flex; align-items: center; justify-content: space-around; border-radius: 4px; margin-top: 10px;">
+            <div class="product-price-main"
+              style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Price</div>
+              <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                  class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
             </div>
-            <div class="product-card"
-                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
-                <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
-                <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
-                <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
-                <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
-                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
-                    <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
-                </div>
-                <div class="product-prop"
-                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main"
-                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
-                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
-                    </div>
-                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
-                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
-                    </div>
-                </div>
-                <button class="product-card-btn"
-                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
-                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
-                        class="nav-icon mdi mdi-chevron-right"></i></button>
+            <div class="devider-vertical" style="width: 1px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="devider-horizontal" style="width: 90%;
+            margin: 6px 0; height: 1px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="product-beds-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Beds & Baths</div>
+              <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
             </div>
-            <div class="product-card"
-                style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer;">
-                <img src="images/city1.jpg" alt="" style="width: 100%; border-radius: 4px;">
-                <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
-                <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
-                <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
-                    <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
-                    <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
-                </div>
-                <div class="product-prop"
-                    style="background: #EFEFEF; padding: 15px; display: flex; align-items: center; justify-content: space-between; border-radius: 4px; margin-top: 10px;">
-                    <div class="product-price-main"
-                        style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Price</div>
-                        <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
-                                class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
-                    </div>
-                    <div style="width: 2px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
-                    <div style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
-                        <div style="font-weight: 500;">Beds & Baths</div>
-                        <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
-                    </div>
-                </div>
-                <button class="product-card-btn"
-                    style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
-                    Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
-                        class="nav-icon mdi mdi-chevron-right"></i></button>
+          </div>
+          <button class="product-card-btn"
+            style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+            Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+              class="nav-icon mdi mdi-chevron-right"></i></button>
+        </a>
+        <a href="propertyDetail.html" class="product-card"
+          style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer; text-decoration: none; color: #000;">
+          <img src="images/city2.jpg" alt="" style="width: 100%; border-radius: 4px;">
+          <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
+          <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
+          <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
+            <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+            <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
+          </div>
+          <div class="product-prop"
+            style="background: #EFEFEF; padding: 10px 5px; display: flex; align-items: center; justify-content: space-around; border-radius: 4px; margin-top: 10px;">
+            <div class="product-price-main"
+              style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Price</div>
+              <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                  class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
             </div>
-        </div>
+            <div class="devider-vertical" style="width: 1px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="devider-horizontal" style="width: 90%;
+            margin: 6px 0; height: 1px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="product-beds-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Beds & Baths</div>
+              <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
+            </div>
+          </div>
+          <button class="product-card-btn"
+            style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+            Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+              class="nav-icon mdi mdi-chevron-right"></i></button>
+        </a>
+        <a href="propertyDetail.html" class="product-card"
+          style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer; text-decoration: none; color: #000;">
+          <img src="images/city3.jpg" alt="" style="width: 100%; border-radius: 4px;">
+          <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
+          <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
+          <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
+            <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+            <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
+          </div>
+          <div class="product-prop"
+            style="background: #EFEFEF; padding: 10px 5px; display: flex; align-items: center; justify-content: space-around; border-radius: 4px; margin-top: 10px;">
+            <div class="product-price-main"
+              style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Price</div>
+              <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                  class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
+            </div>
+            <div class="devider-vertical" style="width: 1px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="devider-horizontal" style="width: 90%;
+            margin: 6px 0; height: 1px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="product-beds-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Beds & Baths</div>
+              <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
+            </div>
+          </div>
+          <button class="product-card-btn"
+            style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+            Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+              class="nav-icon mdi mdi-chevron-right"></i></button>
+        </a>
+        <a href="propertyDetail.html" class="product-card"
+          style="width: 24%; border: 1px solid #C6C6C6; border-radius: 8px; padding: 10px; cursor: pointer; text-decoration: none; color: #000;">
+          <img src="images/city4.jpg" alt="" style="width: 100%; border-radius: 4px;">
+          <h3 style="font-size: 20px; margin-top: 5px;">Gopal Villa</h3>
+          <p style="font-size: 16px; margin-top: 2px;">Lucknow</p>
+          <div class="product-address" style="display: flex; align-items: center; margin-top: 5px;">
+            <i style="color: #5DBAA6; font-size: 20px; margin-right: 5px;" class="mdi mdi-map-marker"></i>
+            <p style="font-size: 14px; color: #8D8D8D;">Near demo mall, Lucknow</p>
+          </div>
+          <div class="product-prop"
+            style="background: #EFEFEF; padding: 10px 5px; display: flex; align-items: center; justify-content: space-around; border-radius: 4px; margin-top: 10px;">
+            <div class="product-price-main"
+              style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Price</div>
+              <div style="margin-top: 4px; color: #2e8975;"><i style="font-size: 14px;"
+                  class="mdi mdi-currency-rupee"></i> 45 Lakhs</div>
+            </div>
+            <div class="devider-vertical" style="width: 1px; height: 42px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="devider-horizontal" style="width: 90%;
+            margin: 6px 0; height: 1px; border-radius: 4px; background: #D9D9D9;"></div>
+            <div class="product-beds-main" style="display: flex; flex-direction: column; align-items: center; font-size: 16px;">
+              <div style="font-weight: 500;">Beds & Baths</div>
+              <div style="margin-top: 4px; color: #808080;">2 Beds & 1 Baths</div>
+            </div>
+          </div>
+          <button class="product-card-btn"
+            style="height: 40px; width: 100%; background: #5DBAA6; border-radius: 2px; border: none; color: #fff; font-size: 16px; font-weight: 500; display: flex; align-items: center; justify-content: center; cursor: pointer; margin-top: 15px;">View
+            Details<i style="font-size: 16px; color: #fff; padding-left: 5px;"
+              class="nav-icon mdi mdi-chevron-right"></i></button>
+        </a>
+      </div>
 
         <button class="city-btn">View all new projects in Lucknow</button>
     </div>
@@ -630,14 +675,20 @@
 
             <div class="popup-mid">
                 <div class="popup-img-full" id="imgFull">
-                    <div class="popup-img"><img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="popup-img"><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="popup-img"><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="popup-img"><img src="images/detail4.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="popup-img"><img src="images/detail5.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="popup-img"><img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="popup-img"><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt=""></div>
-                    <div class="popup-img"><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                    <div class="popup-img"><img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(0)"></div>
+                    <div class="popup-img"><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(1)"></div>
+                    <div class="popup-img"><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(2)"></div>
+                    <div class="popup-img"><img src="images/detail4.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(3)"></div>
+                    <div class="popup-img"><img src="images/detail5.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(4)"></div>
+                    <div class="popup-img"><img src="images/detail1.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(5)"></div>
+                    <div class="popup-img"><img src="images/detail2.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(6)"></div>
+                    <div class="popup-img"><img src="images/detail3.jpg" style="width: 100%; height: 100%;" alt="" onclick="openViewer(7)"></div>
+                </div>
+                <div class="popup-overlay-img" id="imgViewer">
+                    <span class="close-btn" onclick="closeViewer()">×</span>
+                    <span class="nav-btn prev" onclick="prevImage()">❮</span>
+                    <span class="nav-btn next" onclick="nextImage()">❯</span>
+                    <img id="viewerImage" src="" alt="">
                 </div>
                 <div class="popup-scroll" id="scrollBar">
                     <div class="scroll-thumb" id="scrollThumb"></div>
@@ -657,12 +708,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
     <div id="amenities" class="popup-overlay" onclick="outsideClickAmen(event)">
         <div class="popup-amen-box">
 
@@ -677,27 +722,27 @@
                         <h2>BUILDING</h2>
                         <div class="amen-popup-inner">
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                         </div>
@@ -707,27 +752,27 @@
                         <h2>BUILDING</h2>
                         <div class="amen-popup-inner">
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                         </div>
@@ -737,27 +782,27 @@
                         <h2>BUILDING</h2>
                         <div class="amen-popup-inner" id="amenFull">
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                             <div class="amen-popup-single">
-                                <div class="amen-single-img"><img src="images/balcony.svg" alt=""></div>
+                                <div class="amen-single-img"><img src="images/info/val4.png" alt=""></div>
                                 <div>Balcony or Terrace</div>
                             </div>
                         </div>
@@ -780,14 +825,6 @@
 
         </div>
     </div>
-
-
-
-
-
-
-
-
 
 
 </body>
@@ -834,6 +871,95 @@ function outsideClick(event) {
     closePopupImg();
   }
 }
+
+
+
+
+
+// full size image 
+const images = [
+    "images/detail1.jpg",
+    "images/detail2.jpg",
+    "images/detail3.jpg",
+    "images/detail4.jpg",
+    "images/detail5.jpg",
+    "images/detail1.jpg",
+    "images/detail2.jpg",
+    "images/detail3.jpg"
+  ];
+
+  let currentIndex = 0;
+
+  function openViewer(index) {
+    currentIndex = index;
+    const viewer = document.getElementById('imgViewer');
+    const img = document.getElementById('viewerImage');
+    img.classList.remove('zoomed-in');
+    img.src = images[currentIndex];
+    viewer.style.display = 'flex';
+  }
+
+  function closeViewer() {
+    document.getElementById('imgViewer').style.display = 'none';
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    openViewer(currentIndex);
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    openViewer(currentIndex);
+  }
+
+  // zoom
+  document.addEventListener("DOMContentLoaded", () => {
+    const img = document.getElementById("viewerImage");
+    img.addEventListener("click", () => {
+      img.classList.toggle("zoomed-in");
+    });
+  });
+  window.addEventListener("click", function (e) {
+    const viewer = document.getElementById("imgViewer");
+    const img = document.getElementById("viewerImage");
+    if (e.target === viewer && !img.classList.contains("zoomed-in")) {
+      closeViewer();
+    }
+  });
+
+
+
+
+
+
+
+// property info
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".tab-btn");
+    const tabs = document.querySelectorAll(".tab-content");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const tabName = button.getAttribute("data-tab");
+
+        // Toggle button active class
+        buttons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        // Show the correct tab content
+        tabs.forEach(tab => {
+          tab.classList.toggle("active", tab.getAttribute("data-tab") === tabName);
+        });
+      });
+    });
+  });
+
+
+
+
+
+
 
 
 
@@ -947,10 +1073,10 @@ const floorData = {
     'images/floor3.jpg'
   ],
   image2d: [
-    'images/floor1.jpg',
-    'images/floor2.jpg',
+    'images/floor4.png',
     'images/floor3.jpg',
-    'images/floor4.png'
+    'images/floor2.jpg',
+    'images/floor1.jpg'
   ]
 };
 
@@ -1016,1600 +1142,3 @@ const zoomContainer = document.getElementById('floor-zoom-container');
 
 
 </script>
-
-
-<style>
-.slide-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: transform, opacity;
-}
-
-.slide-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-
-.back-links {
-    margin: 20px 100px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.back-links button {
-    font-size: 14px;
-    color: #5DBAA6;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.top-section {
-    margin: 40px 100px;
-}
-
-.name-section {
-    display: flex;
-    align-items: last baseline;
-    justify-content: space-between;
-}
-
-.name-div h2 {
-    font-size: 35px;
-}
-
-.name-div div {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #8D8D8D;
-}
-
-.button-div button {
-    width: 110px;
-    height: 40px;
-    border-radius: 4px;
-    background: #D8F0EB;
-    color: #24826E;
-    font-size: 16px;
-    padding: 8px;
-    border: none;
-    margin-left: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-
-.button-div button:hover{
-    background: #5DBAA6;
-    color: #fff;
-}
-
-.img-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.img-section div {
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.img-section-big {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-section-small {
-    width: 49%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.img-section-small-left {
-    width: 49%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.img-section-small-right {
-    width: 49%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.img-section-btn-div {
-    position: relative;
-}
-
-.transparent-back {
-    background: #000;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    opacity: 0.6;
-}
-
-.transparent-back-btn {
-    background: #2da389;
-    width: 140px;
-    height: 40px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 11;
-    transform: translate(-50%, -50%);
-    border-radius: 30px;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    border: 2px solid #2da389;
-}
-
-.transparent-back-btn:hover {
-    background: #fff;
-    color: #2da389;
-}
-
-
-
-.content-full {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 100px;
-    margin-top: 0px;
-}
-
-.content-left {
-    width: 73%;
-}
-
-.content-right {
-    width: 25%;
-}
-
-.detail {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-
-.price {
-    font-size: 26px;
-    color: #5DBAA6;
-    font-weight: 600;
-}
-
-.price span {
-    font-size: 22px;
-    margin-right: 10px;
-    color: #000;
-    font-weight: 500;
-}
-
-.about {
-    display: flex;
-    gap: 30px;
-    margin-top: 15px;
-}
-
-.about div {
-    display: flex;
-    align-items: center;
-
-}
-
-.about div img {
-    width: 20px;
-    margin-right: 10px;
-}
-
-.detail a {
-    margin-top: 10px;
-    color: #00749D;
-    font-size: 20px;
-    cursor: pointer;
-    width: fit-content;
-    transition: all 0.2s ease-in-out;
-}
-.detail a:hover {
-    color: #5DBAA6;
-}
-
-.feature {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.feature div {
-    font-size: 16px;
-    color: #31917C;
-}
-
-.contact-div {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.contact-div button {
-    background: #D8F0EB;
-    border: none;
-    padding: 8px 20px;
-    font-size: 16px;
-    color: #24826E;
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-.contact-div button:hover {
-    background: #5DBAA6;
-    color: #fff;
-}
-
-.contact-div button i {
-    font-size: 24px;
-}
-
-
-
-
-.info-full {
-    margin-bottom: 30px;
-}
-
-.info-full h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: #F6FAF9;
-}
-
-td {
-    border: 1px solid #BABABA;
-    padding: 13px 20px;
-    width: 100%;
-    display: flex;
-}
-
-tr {
-    border-collapse: collapse;
-    display: flex;
-}
-
-.td-left {
-    width: 200px;
-}
-
-.td-right {
-    font-weight: 600;
-    color: #484848;
-}
-
-
-
-
-
-
-
-
-
-
-
-.amenities-main {
-    margin-top: 40px;
-}
-.amenities-main h2 {
-    font-size: 20px;
-}
-.amen {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 20px;
-
-}
-.amen-single {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    background: #E6F3F8;
-    border-radius: 4px;
-    width: 280px;
-}
-.amen-single-img {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-}
-.amen-single-img img {
-    width: 100%;
-    height: 100%;
-}
-.amenities-main a {
-    text-decoration: none;
-    color: #00749D;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-}
-.amenities-main a:hover {
-    color: #5DBAA6;
-}
-.amen-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.floor-main {
-    margin-top: 40px;
-}
-.floor-main h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-.floor-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 10px;
-}
-.floor-btn button {
-    padding: 10px 30px;
-    border-radius: 6px 6px 0 0;
-    font-size: 16px;
-    background-color: #fff;
-    color: #5DBAA6;
-    border: 2px solid #5DBAA6;
-    border-bottom: none;
-    cursor: pointer;
-}
-.floor-btn .active {
-    background-color: #5DBAA6;
-    color: white;
-    border: 2px solid #5DBAA6;
-    border-bottom: none;
-}
-.floor {
-    padding: 20px;
-    border: 1px solid #5DBAA6;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-}
-.floor-small {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.floor-small div {
-    border: 1px solid #5DBAA6;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.floor-big {
-    width: 78%;
-    border-radius: 8px;
-    overflow: hidden;
-}
-#floor-zoom-container {
-  cursor: zoom-in;
-}
-.floor-big img {
-    width: 100%;
-    height: 100%;
-}
-.map {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #BABABA;
-    border-radius: 8px;
-}
-.map-back {
-    opacity: 0.3;
-}
-.map-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-}
-.map-btn button i {
-    font-size: 20px;
-}
-
-
-
-
-
-
-
-.buttons {
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.blob-btn {
-  z-index: 1;
-  position: relative;
-  padding: 10px 24px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  transition: color 0.3s;
-  cursor: pointer;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-}
-
-.blob-btn::before {
-  content: "";
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #5DBAA6;
-  border-radius: 30px;
-}
-
-.blob-btn::after {
-  content: "";
-  z-index: -2;
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s 0.2s;
-  border-radius: 30px;
-}
-
-.blob-btn:hover {
-  color: #5DBAA6;
-  border-radius: 30px;
-}
-
-.blob-btn:hover::after {
-  transition: all 0.3s;
-  left: 0;
-  top: 0;
-  border-radius: 30px;
-}
-
-.blob-btn__inner {
-  z-index: -1;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  background: #5DBAA6;
-}
-
-.blob-btn__blobs {
-  position: relative;
-  display: block;
-  height: 100%;
-  filter: url('#goo');
-}
-
-.blob-btn__blob {
-  position: absolute;
-  top: 2px;
-  width: 25%;
-  height: 100%;
-  background: #fff;
-  border-radius: 100%;
-  transform: translate3d(0, 150%, 0) scale(1.7);
-  transition: transform 0.3s;
-}
-
-@supports (filter: url('#goo')) {
-  .blob-btn__blob {
-    transform: translate3d(0, 150%, 0) scale(1.4);
-  }
-}
-
-.blob-btn__blob:nth-child(1) {
-  left: 0%;
-  transition-delay: 0s;
-}
-
-.blob-btn__blob:nth-child(2) {
-  left: 30%;
-  transition-delay: 0.08s;
-}
-
-.blob-btn__blob:nth-child(3) {
-  left: 60%;
-  transition-delay: 0.16s;
-}
-
-.blob-btn__blob:nth-child(4) {
-  left: 90%;
-  transition-delay: 0.24s;
-}
-
-.blob-btn:hover .blob-btn__blob {
-  transform: translateZ(0) scale(1.7);
-}
-
-@supports (filter: url('#goo')) {
-  .blob-btn:hover .blob-btn__blob {
-    transform: translateZ(0) scale(1.4);
-  }
-}
-
-
-
-
-
-
-.alert {
-    border: 1px solid #BABABA;
-    border-radius: 8px;
-    margin-top: 20px;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.alert p {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.alert button {
-    border: 1px solid #5DBAA6;
-    border-radius: 4px;
-    padding: 10px;
-    font-size: 14px;
-    background: none;
-    color: #5DBAA6;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-.alert button i {
-    font-size: 18px;
-}
-.alert button:hover {
-    background: #5DBAA6;
-    color: #fff;
-}
-
-
-.right-extra {
-    padding: 10px;
-    border: 1px solid #BABABA;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.right-extra h6 {
-    font-size: 16px;
-}
-
-.right-extra ol {
-    margin-left: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.right-extra ol li {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #7a7a7a;
-}
-
-.right-extra a {
-    text-decoration: none;
-    color: #267A68;
-    font-size: 14px;
-    transition: all 0.2s ease-in-out;
-}
-.right-extra a:hover {
-    color: #00a3de;
-}
-
-
-
-.Recommended {
-    margin: 60px 100px;
-}
-
-.Recommended h1 {
-    font-size: 20px;
-}
-
-.city-btn {
-    margin: auto;
-    height: 40px;
-    width: 300px;
-    background: #DCEBE6;
-    border-radius: 4px;
-    border: none;
-    color: #575757;
-    font-size: 16px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.popup-box, .popup-amen-box {
-  background: white;
-  padding: 30px;
-  padding-bottom: 0;
-  border-radius: 12px;
-  width: 70%;
-  position: relative;
-  text-align: center;
-}
-.popup-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.popup-head h2{
-    font-size: 20px;
-}
-.popup-head button{
-    border: 2px solid #5DBAA6;
-    color: #5DBAA6;
-    background: none;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
-}
-.popup-head button:hover{
-    background: #5DBAA6;
-    color: #fff;
-}
-.popup-head button i{
-    font-size: 24px;
-}
-
-
-
-.popup-mid{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    height: 60vh;
-}
-.popup-img-full{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 98%;
-    height: 100%;
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-.popup-img-full::-webkit-scrollbar {
-  display: none;
-}
-.popup-img{
-    width: 49%;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-.popup-scroll{
-    width: 6px;
-    height: 100%;
-    background-color: #C2ECE3;
-    border-radius: 4px;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-}
-.scroll-thumb {
-    width: 4px;
-    height: 100px;
-    background-color: #37907D;
-    border-radius: 4px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-
-.popup-foot{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.popup-foot .contact-div{
-    margin-top: 0;
-}
-
-
-
-
-
-
-
-
-
-.amen-popup-full{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 98%;
-    height: 100%;
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-.amen-popup-full::-webkit-scrollbar {
-  display: none;
-}
-.amen-popup h2{
-    font-size: 16px;
-    color: #757575;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-align: left;
-}
-.amen-popup-inner{
-    display: flex;
-    margin-top: 10px;
-    flex-wrap: wrap;
-    gap: 2%;
-    width: 98%;
-}
-.amen-popup-single{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background: #E6F3F8;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-.amen-single-img{
-    width: 30px;
-    height: 30px;
-}
-.amen-popup-single div{
-    font-size: 16px;
-    color: #292929;
-    line-height: 20px;
-    margin-top: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-    .td-left {
-        width: 150px;
-    }
-
-    .img-section-big {
-        width: 50.5%;
-    }
-
-    .img-section-small {
-        width: 48.5%;
-    }
-
-    .blob-btn {
-        padding: 8px 14px;
-        font-size: 14px;
-        border-radius: 8px;
-    }
-}
-
-
-
-
-
-
-
-@media (max-width: 1000px) {
-    .back-links {
-        margin: 20px 5vw;
-    }
-
-    .back-links button {
-        font-size: 12px;
-    }
-
-    .top-section {
-        margin: 0px 5vw;
-    }
-
-    .name-div h2 {
-        font-size: 30px;
-    }
-
-    .name-div div {
-        margin: 5px 0;
-        font-size: 14px;
-    }
-
-    .button-div button {
-        height: 35px;
-        font-size: 14px;
-        padding: 0px;
-        margin-left: 4px;
-    }
-
-    .img-section {
-        margin-top: 10px;
-    }
-
-    .img-section div {
-        border-radius: 4px;
-    }
-
-    .img-section-big {
-        width: 67%;
-    }
-
-    .img-section-small {
-        width: 32%;
-    }
-
-    .img-section-small-left {
-        display: none;
-    }
-
-    .img-section-small-right {
-        width: 100%;
-    }
-
-
-    .content-full {
-        margin: 0px 5vw;
-        margin-top: 20px;
-    }
-
-    .price {
-        font-size: 22px;
-    }
-
-    .price span {
-        font-size: 20px;
-    }
-
-    .about {
-        margin-top: 10px;
-    }
-
-    .contact-div {
-        gap: 10px;
-    }
-
-    .contact-div button {
-        padding: 5px 20px;
-        font-size: 16px;
-    }
-
-    .contact-div button i {
-        font-size: 22px;
-    }
-
-
-    .info-full h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        background: #F6FAF9;
-        display: flex;
-        border: 1px solid #BABABA;
-        border-radius: 8px;
-    }
-
-    td {
-        padding: 15px 20px;
-        border: none !important;
-    }
-
-    tr {
-        flex-direction: column;
-    }
-
-    .td-left {
-        width: 30vw;
-    }
-
-    .td-right {
-        font-weight: 600;
-        color: #484848;
-    }
-
-
-    .amenities-main h2 {
-        font-size: 18px;
-    }
-
-    .amen {
-        gap: 10px;
-    }
-
-    .amen-single {
-        padding: 10px;
-        width: 47%;
-    }
-
-    .amen-single-img {
-        margin-right: 10px;
-    }
-
-    .amenities-main a {
-        font-size: 18px;
-    }
-
-    .floor-btn button {
-        padding: 8px 25px;
-        font-size: 14px;
-        border: 1px solid #5DBAA6;
-    }
-
-    .floor {
-        padding: 10px;
-        margin-top: -1px;
-    }
-
-    .floor-small {
-        gap: 5px;
-    }
-
-
-    .blob-btn {
-        padding: 6px 10px;
-        font-size: 14px;
-    }
-    .map-btn button i {
-        font-size: 16px;
-        margin-right: 4px !important;
-    }
-
-
-    .alert {
-        border-radius: 4px;
-        margin-top: 10px;
-        padding: 10px;
-    }
-
-    .alert p {
-        margin-bottom: 10px;
-    }
-
-    .alert button {
-        padding: 6px;
-    }
-
-    .alert button i {
-        font-size: 16px;
-    }
-
-    .right-extra {
-        border-radius: 4px;
-        margin-top: 10px;
-    }
-
-    .right-extra h6 {
-        font-size: 14px;
-    }
-
-    .right-extra ol {
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-
-
-    .Recommended {
-        margin: 40px 5vw;
-    }
-
-    .Recommended h1 {
-        font-size: 20px;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-@media (max-width: 750px) {
-    .img-section-big {
-        width: 67.5%;
-    }
-
-    .img-section-small {
-        width: 31.5%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 700px) {
-    .back-links {
-        margin: 10px 5vw;
-    }
-
-    .name-div h2 {
-        font-size: 20px;
-    }
-
-    .name-div div {
-        font-size: 12px;
-    }
-
-    .button-div button {
-        height: 30px;
-        font-size: 14px;
-        margin-left: 2px;
-        width: 80px;
-    }
-
-    .img-section {
-        margin-top: 10px;
-    }
-
-    .img-section-big {
-        width: 67.7%;
-    }
-
-    .img-section-small {
-        width: 31.3%;
-    }
-
-    .transparent-back-btn {
-        width: 90px;
-        height: 30px;
-        border-radius: 30px;
-        font-size: 14px;
-    }
-
-
-    .content-full {
-        margin: 0px 5vw;
-        margin-top: 20px;
-        flex-direction: column;
-    }
-
-    .content-left {
-        width: 100%;
-    }
-
-    .content-right {
-        width: 100%;
-    }
-
-    .detail {
-        margin-bottom: 20px;
-    }
-
-    .price {
-        font-size: 20px;
-    }
-
-    .price span {
-        font-size: 16px;
-        margin-right: 6px;
-    }
-
-    .about {
-        margin-top: 10px;
-        gap: 20px;
-    }
-
-    .about div img {
-        width: 16px;
-        margin-right: 6px;
-    }
-
-    .detail a {
-        font-size: 16px;
-    }
-
-    .feature {
-        margin-top: 10px;
-    }
-
-    .feature div {
-        font-size: 14px;
-    }
-
-    .feature span {
-        width: 1px !important;
-        height: 14px !important;
-    }
-
-    .contact-div {
-        margin-top: 15px;
-        gap: 6px;
-    }
-
-    .contact-div button {
-        padding: 4px 14px;
-        font-size: 14px;
-    }
-
-    .contact-div button i {
-        font-size: 18px;
-        margin-right: 4px !important;
-    }
-
-
-
-    .info-full {
-        margin-bottom: 20px;
-    }
-
-    .info-full h2 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    table {
-        border-radius: 4px;
-    }
-
-    td {
-        padding: 10px;
-    }
-
-    .td-left {
-        width: 40vw;
-    }
-
-
-    .amenities-main {
-        margin-top: 30px;
-    }
-
-    .amenities-main h2 {
-        font-size: 16px;
-    }
-
-    .amenities-main a {
-        font-size: 16px;
-    }
-
-    .amen-single div {
-        font-size: 14px;
-    }
-
-
-
-    .floor-main {
-        margin-top: 30px;
-    }
-
-    .floor-main h3 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .floor-btn button {
-        padding: 4px 10px;
-    }
-
-    .floor {
-        padding: 6px;
-    }
-
-    .floor-small {
-        gap: 4px;
-    }
-
-
-
-
-    .map {
-        margin-top: 20px;
-        height: 80px;
-        overflow: hidden;
-        border-radius: 4px;
-    }
-
-    .blob-btn {
-        padding: 8px 20px;
-        font-size: 14px;
-    }
-    .map-btn button i {
-        font-size: 16px;
-        margin-right: 4px !important;
-    }
-
-    .Recommended h1 {
-        font-size: 16px;
-    }
-
-    .city-btn {
-        height: 35px;
-        width: 240px;
-        font-size: 14px;
-        margin-top: 0px;
-    }
-
-    .city-content {
-        margin-top: 10px !important;
-    }
-
-
-
-
-
-
-.popup-box, .popup-amen-box {
-  padding: 10px 20px;
-  padding-bottom: 0px;
-  border-radius: 8px;
-  width: 80%;
-}
-.popup-head h2{
-    font-size: 16px;
-}
-.popup-head button{
-    border: 1px solid #5DBAA6;
-}
-.popup-head button i{
-    font-size: 18px;
-}
-
-
-
-.popup-mid{
-    margin-top: 10px;
-    height: 50vh;
-}
-.popup-img-full{
-    width: 96%;
-}
-.popup-img{
-    width: 100%;
-    margin-bottom: 10px;
-}
-.popup-scroll{
-    width: 4px;
-}
-.scroll-thumb {
-    width: 2px;
-}
-
-
-
-.popup-foot{
-    height: 60px;
-}
-
-
-.amen-popup-full{
-    width: 96%;
-}
-.amen-popup h2{
-    font-size: 14px;
-}
-.amen-popup-inner{
-    gap: 3%;
-}
-.amen-popup-single{
-    width: 125px;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-.amen-single-img{
-    width: 24px;
-    height: 24px;
-}
-.amen-popup-single div{
-    font-size: 14px;
-    line-height: 18px;
-    margin-top: 10px;
-}
-
-
-
-}
-
-
-
-
-
-
-
-
-@media (max-width: 500px) {
-    .hideOn500{
-        display: none;
-    }
-    .popup-foot .contact-div button{
-        padding: 6px 24px;
-    }
-    .popup-foot .contact-div button i{
-        margin: 0 !important;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 400px) {
-
-
-    .button-div {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .button-div button {
-        height: 25px;
-        margin-left: 0px;
-        width: 70px;
-        border-radius: 2px;
-    }
-
-    .img-section-big {
-        width: 68%;
-    }
-
-    .img-section-small {
-        width: 30.5%;
-    }
-
-    .transparent-back-btn {
-        width: 80px;
-        height: 24px;
-    }
-
-    .content-full {
-        margin-top: 10px;
-    }
-
-    .about {
-        gap: 10px;
-        font-size: 14px;
-    }
-
-    .about div img {
-        width: 14px;
-        margin-right: 4px;
-    }
-
-    .detail a {
-        font-size: 14px;
-    }
-
-    .detail a i {
-        margin-left: 1px !important;
-    }
-
-    .feature {
-        margin-top: 10px;
-        gap: 6px;
-    }
-
-    .feature div {
-        font-size: 13px;
-    }
-
-    td {
-        padding: 6px;
-        font-size: 14px;
-    }
-
-    .td-left {
-        width: 45vw;
-    }
-
-    .amen {
-        gap: 6px;
-    }
-
-    .amen-single {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .amenities-main {
-        margin-top: 20px;
-    }
-
-    .amenities-main a {
-        font-size: 14px;
-    }
-
-    .amen-single div {
-        font-size: 12px;
-    }
-
-    .floor-main {
-        margin-top: 30px;
-    }
-
-    .floor-main h3 {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    .floor-btn button {
-        padding: 4px 10px;
-    }
-
-    .floor {
-        padding: 6px;
-    }
-
-    .floor-small {
-        gap: 4px;
-    }
-
-    .map {
-        margin-top: 20px;
-        height: 80px;
-        overflow: hidden;
-        border-radius: 4px;
-    }
-
-    .map-btn button i {
-        font-size: 18px;
-    }
-
-    .Recommended h1 {
-        font-size: 16px;
-    }
-
-    .city-btn {
-        height: 35px;
-        width: 240px;
-        font-size: 14px;
-        margin-top: 0px;
-    }
-
-
-
-
-.popup-box, .popup-amen-box {
-  padding: 10px;
-  padding-bottom: 0px;
-}
-.popup-head h2{
-    font-size: 14px;
-}
-.popup-head button i{
-    font-size: 14px;
-}
-
-
-.amen-popup h2{
-    font-size: 12px;
-}
-.amen-popup-single{
-    width: 100%;
-}
-.amen-single-img{
-    width: 20px;
-    height: 20px;
-}
-.amen-popup-single div{
-    margin-top: 6px;
-}
-
-
-
-}
-</style>

@@ -105,7 +105,6 @@
           </div>
 
             <div class="search-type">
-                <!-- <i class="search-location-i mdi mdi-home-city-outline"></i> -->
                 <div class="custom-dropdown search-custom-dropdown">
                     <div class="custom-select" onclick="toggleDropdown()">Property Type</div>
                     <ul class="custom-options">
@@ -130,19 +129,61 @@
 
 
             <div class="search-type more-filter">
-                  <div class="custom-dropdown1">
-                    <div class="custom-select1" onclick="toggleDropdown1()">More Filters</div>
-                    <ul class="custom-options1">
-                      <li onclick="selectOption1(this)">1 Bed & 1 Bath</li>
-                      <li onclick="selectOption1(this)">2 Bed & 1 Bath</li>
-                      <li onclick="selectOption1(this)">2 Bed & 2 Bath</li>
+                  <div class="custom-dropdown-filter">
+                    <div class="custom-select-filter" onclick="toggleDropdownFilter()">More Filters</div>
+                    <ul class="custom-options-filter">
+
+                      <div class="filter-price">
+                        <h2>Price (&#8377;)</h2>
+                        <div class="filter-price-selector">
+                          <div class="filter-single">
+                            <h4>Minimum</h4>
+                            <input placeholder="" />
+                          </div>
+                          <div class="filter-single">
+                            <h4>Maximum</h4>
+                            <input placeholder="" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="filter-price">
+                        <h2>Area (sqft)</h2>
+                        <div class="filter-price-selector">
+                          <div class="filter-single">
+                            <h4>Minimum</h4>
+                            <input placeholder="" />
+                          </div>
+                          <div class="filter-single">
+                            <h4>Maximum</h4>
+                            <input placeholder="" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="filter-btn-full">
+                        <button class="form-btn filter-btn-left">Reset</button>
+                        <button class="form-btn filter-btn-right">Done</button>
+                      </div>
+
                     </ul>
                   </div>
               </div>
               
             </div>
-            
-            
+
+
+
+
+
+            <div class="filter-clear-full">
+              <button class="form-btn filter-clear-left">Clear Filter</button>
+              <button class="form-btn filter-clear-right">Save Search</button>
+            </div>
+
+
+
+            <div class="devider"></div>
 
 
 
@@ -150,47 +191,146 @@
 
 
 
+            <div class="content-full">
+              <div class="content-left">
+                <div class="left-head">
+                  <h2>Apartments for sale in Lucknow</h2>
+                  <div class="left-head-btn-full">
+
+                    <div class="bottom-type">
+                      <div class="custom-dropdown-list">
+                        <div class="property-type">
+                          <i class="bottom-type-i mdi mdi-list-box-outline"></i>
+                          <div class="custom-select-list" onclick="toggleDropdownList()">Popular</div>
+                        </div>
+                        <ul class="custom-options-list">
+                          <li onclick="selectOptionList(this)">Newest</li>
+                          <li onclick="selectOptionList(this)">Lowest Price</li>
+                          <li onclick="selectOptionList(this)">Highest Price</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="head-right">
+                      <div class="list-tabs">
+                        <input type="radio" name="list-tab" id="list-tab1" checked>
+                        <label for="list-tab1" class="list-tab"><i class="list-tab-i mdi mdi-list-box-outline"></i>List</label>
+
+                        <input type="radio" name="list-tab" id="list-tab2">
+                        <label for="list-tab2" class="list-tab"><i class="list-tab-i mdi mdi-map-marker"></i>Map</label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
 
 
 
-            <!-- <div class="banner-right-form">
-  
-              <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
+
+
+
+
                 
-                <div class="banner-form-both-select">
-                  <div class="custom-dropdown-price">
-                    <div class="custom-select-price" onclick="toggleDropdownPrice()">Price (&#8377;)</div>
-                    <ul class="custom-options-price">
-                      <li onclick="selectOptionPrice(this)">0 to 50L</li>
-                      <li onclick="selectOptionPrice(this)">50L to 2Cr</li>
-                      <li onclick="selectOptionPrice(this)">2Cr+</li>
-                    </ul>
-                  </div>
-                </div>
+
+
+
+
+
+
+
               </div>
-              
-              
-              <div class="banner-form-both-select-main" style="display: flex; align-items: center; gap: 20px;">
-                <div class="banner-form-both-select">
-                  <div class="custom-dropdown-area">
-                    <div class="custom-select-area" onclick="toggleDropdownArea()">Area (sqft)</div>
-                    <ul class="custom-options-area">
-                      <li onclick="selectOptionArea(this)">0 to 1000 sqft</li>
-                      <li onclick="selectOptionArea(this)">1000 to 2000 sqft</li>
-                      <li onclick="selectOptionArea(this)">2000+ sqft</li>
-                    </ul>
+
+              <div class="content-right">
+
+                  <div class="map slide-up">
+                      <div class="map-back">
+                          <img src="images/map-back.jpg" style="width: 100%; height: 100%;" alt="">
+                      </div>
+                      <div class="map-btn">
+
+                          <div class="buttons">
+                              <button class="blob-btn">
+                                  <i class="mdi mdi-map-marker" style="margin-right: 8px;"></i>
+                                  Explore on Map
+                                  <span class="blob-btn__inner">
+                                  <span class="blob-btn__blobs">
+                                      <span class="blob-btn__blob"></span>
+                                      <span class="blob-btn__blob"></span>
+                                      <span class="blob-btn__blob"></span>
+                                      <span class="blob-btn__blob"></span>
+                                  </span>
+                                  </span>
+                              </button>
+                              <br/>
+                              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display:none;">
+                                  <defs>
+                                  <filter id="goo">
+                                      <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                      <feColorMatrix in="blur" mode="matrix"
+                                      values="1 0 0 0 0  
+                                              0 1 0 0 0  
+                                              0 0 1 0 0  
+                                              0 0 0 21 -7" result="goo"></feColorMatrix>
+                                      <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                  </filter>
+                                  </defs>
+                              </svg>
+                          </div>
+                              
+                      </div>
                   </div>
-                </div>
-  
-                <button onclick="window.location.href='/propertyListing.html'" class="banner-form-btn">Search</button>
+
+                  <div class="alert slide-up">
+                      <p>Be the first to hear about new properties</p>
+                      <button><i class="mdi mdi-bell-ring-outline" style="margin-right: 8px;"></i>Alert for New
+                          Properties</button>
+                  </div>
+
+                  <div class="right-extra slide-up">
+                      <h6>Recommended searches</h6>
+                      <ol type="1">
+                          <li>Bedroom apartment for sale in Lucknow</li>
+                          <li>Bedroom apartment for sale in Lucknow</li>
+                          <li>Bedroom apartment for sale in Lucknow</li>
+                          <li>Bedroom apartment for sale in Lucknow</li>
+                      </ol>
+                      <a href="">View More<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
+                  </div>
+
+                  <div class="right-extra slide-up">
+                      <h6>Other Locations</h6>
+                      <ol type="1">
+                          <li>Jaipur</li>
+                          <li>Delhi</li>
+                          <li>Goa</li>
+                          <li>Mohali</li>
+                          <li>Mumbai</li>
+                          <li>Agra</li>
+                          <li>Gurugram</li>
+                      </ol>
+                      <a href="">View More<i class="mdi mdi-chevron-down" style="margin-left: 4px;"></i></a>
+                  </div>
+
+                  <div class="right-extra slide-up">
+                      <h6>Invest in Off Plan</h6>
+                      <ol type="1">
+                          <li>Off plan apartment in Lucknow</li>
+                          <li>Off plan properties in Lucknow</li>
+                          <li>New project in Lucknow</li>
+                      </ol>
+                  </div>
+
+                  <div class="right-extra slide-up">
+                      <h6>Useful Links</h6>
+                      <ol type="1">
+                          <li>Apartment for Rent in Lucknow</li>
+                      </ol>
+                  </div>
+
               </div>
-  
-            </div> -->
+            </div>
 
-
-
-
-
+            
 </body>
 
 
@@ -256,52 +396,57 @@ window.addEventListener('click', function (e) {
 });
 
 
-function toggleDropdownPrice() {
-  const optionsList = document.querySelector('.custom-options-price');
-  optionsList.classList.toggle('showPrice');
+
+function toggleDropdownFilter() {
+  const optionsList = document.querySelector('.custom-options-filter');
+  optionsList.classList.toggle('showFilter');
 }
 
 function selectOptionPrice(el) {
-  const selectBox = document.querySelector('.custom-select-price');
-  const options = document.querySelectorAll('.custom-options-price li');
+  const selectBox = document.querySelector('.custom-select-filter');
+  const options = document.querySelectorAll('.custom-options-filter li');
 
-  options.forEach(opt => opt.classList.remove('selectedPrice'));
+  options.forEach(opt => opt.classList.remove('selectedFilter'));
 
-  el.classList.add('selectedPrice');
+  el.classList.add('selectedFilter');
   selectBox.innerHTML = el.textContent;
 
-  document.querySelector('.custom-options-price').classList.remove('showPrice');
+  document.querySelector('.custom-options-filter').classList.remove('showFilter');
 }
 
 window.addEventListener('click', function (e) {
-  const dropdown = document.querySelector('.custom-dropdown-price');
+  const dropdown = document.querySelector('.custom-dropdown-filter');
   if (!dropdown.contains(e.target)) {
-    document.querySelector('.custom-options-price').classList.remove('showPrice');
+    document.querySelector('.custom-options-filter').classList.remove('showFilter');
   }
 });
 
 
-function toggleDropdownArea() {
-  const optionsList = document.querySelector('.custom-options-area');
-  optionsList.classList.toggle('showArea');
+
+
+
+
+function toggleDropdownList() {
+  const optionsList = document.querySelector('.custom-options-list');
+  optionsList.classList.toggle('showList');
 }
 
-function selectOptionArea(el) {
-  const selectBox = document.querySelector('.custom-select-area');
-  const options = document.querySelectorAll('.custom-options-area li');
+function selectOptionList(el) {
+  const selectBox = document.querySelector('.custom-select-list');
+  const options = document.querySelectorAll('.custom-options-list li');
 
-  options.forEach(opt => opt.classList.remove('selectedArea'));
+  options.forEach(opt => opt.classList.remove('selectedList'));
 
-  el.classList.add('selectedArea');
+  el.classList.add('selectedList');
   selectBox.innerHTML = el.textContent;
 
-  document.querySelector('.custom-options-area').classList.remove('showArea');
+  document.querySelector('.custom-options-list').classList.remove('showList');
 }
 
 window.addEventListener('click', function (e) {
-  const dropdown = document.querySelector('.custom-dropdown-area');
+  const dropdown = document.querySelector('.custom-dropdown-list');
   if (!dropdown.contains(e.target)) {
-    document.querySelector('.custom-options-area').classList.remove('showArea');
+    document.querySelector('.custom-options-list').classList.remove('showList');
   }
 });
 
