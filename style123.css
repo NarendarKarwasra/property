@@ -472,6 +472,7 @@ tr {
     align-items: center;
     gap: 10px;
     margin-left: 10px;
+    margin-bottom: 8px;
 }
 .floor-btn button {
     padding: 10px 30px;
@@ -479,8 +480,8 @@ tr {
     font-size: 16px;
     background-color: #fff;
     color: #5DBAA6;
-    border: 2px solid #5DBAA6;
-    border-bottom: none;
+    border: 1px solid #5DBAA6;
+    /* border-bottom: none; */
     cursor: pointer;
 }
 .floor-btn .active {
